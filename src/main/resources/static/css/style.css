@@ -80,9 +80,10 @@ ui{
     color: black;
     border: none;
     outline: 0;
+    cursor: pointer;
 }
 
-.input_box.focus{
+.focus{
     border: 1px solid black;
 }
 
