@@ -1,0 +1,65 @@
+server:
+  servlet:
+    context-path: /
+  port: 80
+---
+logging:
+  file:
+    name: log/debug.log  # 로깅 파일 위치이다.
+  level:             # 각 package 별로 로깅 레벨을 지정할 수 있다.
+    com.urban.ROI_System: debug
+  logback:
+    rollingpolicy:
+      max-history: 7
+      max-file-size: 10MB
+---
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:
+    username:
+    password:
+    hikari:
+      poolName: HikariCP
+      maximum-pool-size: 10
+      max-lifetime: 1800000
+      connection-test-query: SELECT 1
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+  thymeleaf:
+    cache: false
+    enabled: true
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+      use_sql_comments: true
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+---
+http:
+  encoding:
+    charset: UTF-8
+    enabled: true
+    force: true
+---
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:~/test;
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
