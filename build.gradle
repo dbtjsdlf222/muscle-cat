@@ -66,6 +66,7 @@ hibernate {
         enableExtendedEnhancement = false
     }
 }
+/*
 
 def frontendDir = "$projectDir/frontend"
 
@@ -110,3 +111,4 @@ task copyReactBuildFiles(type: Copy) {
     into "$projectDir/src/main/resources/static"
 }
 
+*/

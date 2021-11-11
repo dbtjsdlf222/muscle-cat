@@ -15,6 +15,7 @@ public class MainController {
     @Autowired
     UserRepository userRepository;
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("login")
     public ResponseEntity<String> login(@RequestParam String id,@RequestParam String pw) {
         userRepository.findByIdAndPw(id, pw);
