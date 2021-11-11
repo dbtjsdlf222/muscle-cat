@@ -1,16 +1,12 @@
 package com.ncs7.musclecat.model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
-import java.util.List;
 
-@Table(name = "users")
+@Table(name = "user")
 @Entity
 @Getter
 @Setter
@@ -28,9 +24,9 @@ public class UserModel {
 	@Column(name = "name",length = 16)
 	private String name;
 
-	@Column(name = "id",length = 16)
+	@Column(name = "id",length = 32)
 	private String id;
 
-	@Column(name = "pw",length = 64)
+	@Column(name = "pw",length = 32)
 	private String pw;
 }

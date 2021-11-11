@@ -15,10 +15,9 @@ public class MainController {
     @Autowired
     UserRepository userRepository;
 
-
     @GetMapping("login")
     public ResponseEntity<String> login(@RequestParam String id,@RequestParam String pw) {
-        userRepository.findByIdAndPw(id, pw );
+        userRepository.findByIdAndPw(id, pw);
         return new ResponseEntity<String>("API 성공", HttpStatus.OK);
     }
 
