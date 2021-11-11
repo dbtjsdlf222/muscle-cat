@@ -377,3 +377,36 @@ java.lang.IllegalStateException: The WebApplicationContext for test context [Def
 2021-11-11 18:02:25.315  INFO 5476 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-11-11 18:02:25.316  INFO 5476 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-11-11 18:02:25.317  INFO 5476 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-11 18:25:01.786  INFO 4016 --- [restartedMain] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.11 on 유선일 with PID 4016 (C:\Users\2021.04.09\Desktop\musclecat\out\production\classes started by 2021.04.09 in C:\Users\2021.04.09\Desktop\musclecat)
+2021-11-11 18:25:01.787  INFO 4016 --- [restartedMain] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-11-11 18:25:01.818  INFO 4016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-11 18:25:01.818  INFO 4016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-11 18:25:02.286  INFO 4016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 18:25:02.286  INFO 4016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-11-11 18:25:02.308  INFO 4016 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-11-11 18:25:02.309  INFO 4016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2021-11-11 18:25:02.316  INFO 4016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-11-11 18:25:02.316  INFO 4016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-11 18:25:02.337  INFO 4016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2021-11-11 18:25:02.732  INFO 4016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-11-11 18:25:02.738  INFO 4016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-11 18:25:02.739  INFO 4016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-11 18:25:02.807  INFO 4016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-11 18:25:02.807  INFO 4016 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 989 ms
+2021-11-11 18:25:02.829  INFO 4016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-11 18:25:02.917  INFO 4016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-11 18:25:02.923  INFO 4016 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-11-11 18:25:03.017  INFO 4016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-11 18:25:03.051  INFO 4016 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.0.Final
+2021-11-11 18:25:03.079  INFO 4016 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-11 18:25:03.152  INFO 4016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-11-11 18:25:03.454  INFO 4016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-11 18:25:03.461  INFO 4016 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-11 18:25:03.733  WARN 4016 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-11 18:25:03.846  INFO 4016 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-11-11 18:25:04.029  INFO 4016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-11 18:25:04.053  INFO 4016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-11-11 18:25:04.061  INFO 4016 --- [restartedMain] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.627 seconds (JVM running for 3.374)
+2021-11-11 18:26:07.900  INFO 4016 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-11 18:26:07.901  INFO 4016 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-11 18:26:07.902  INFO 4016 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
