@@ -1,0 +1,126 @@
+.warp {
+    position: relative;
+    height: 100%;
+   
+   }
+   .header {
+     margin-bottom: 40px;
+     box-sizing: border-box;
+   
+   }
+   .logo-box{
+     position: relative;
+     width: 300px;
+     margin: 0 auto;
+     text-align: center;
+   }
+   .main-logo {
+     display: inline-block;
+     width: 300px;
+     height: 60px;
+     margin-top: 110px;
+   
+   }
+   .login-box {
+     position: relative;
+     width: 540px;
+     margin: 0 auto;
+     box-sizing: border-box;
+   }
+   .login-wrap {
+     border: 1px solid black;
+     
+   }
+   
+   .login-text-box {
+     text-align: center;
+     margin: 20px 0;
+     font-size: 16px;
+     font-weight: 600;
+   }
+   
+   .input-box {
+     position: relative;
+     height: 100%;
+     border: 1px solid gray;
+     padding: 16px 17px;
+     display: table;
+     width: 100%;
+     box-sizing: border-box;
+   }
+   .input-box:first-child {
+    border-radius: 6px 6px 0 0;
+   }
+   .input-box:last-child {
+    border-radius: 0 0 6px 6px;
+   }
+   
+   .icon-box{
+     display: table-cell;
+     width: 26px;
+   }
+   
+   .icon-id {
+     background-image: url(login_person.png);
+     width: 20px;
+     height: 20px;
+     display: table-cell;
+   }
+   
+   .icon-pw {
+     background-image: url(login_lock.png);
+     width: 20px;
+     height: 20px;
+     display: table-cell;
+   }
+   
+   input{
+     border: none;
+     appearance: none;
+     outline: 0;
+     text-decoration: none;
+     cursor: pointer;
+     height: 20px;
+   }
+   
+   .input-text{
+     position: relative;
+     width: 100%;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+     box-sizing: border-box;
+   }
+   .input-wrap {
+     position: relative;
+     padding:  20px;
+   }
+   
+   .btn-wrap {
+     padding:  20px;
+   }
+   
+   .login_btn {
+     width: 100%;
+     border-radius: 6px;
+     padding: 17px 0 15px;
+     border: solid 1px rgba(0,0,0,.15);
+     background-color: black;
+     color: white;
+     font-size: 20px;
+     font-weight: 900;
+     cursor: pointer;
+     
+   }
+   
+   @media (max-width: 632px){
+     .login-box {
+         width: 100%;
+         padding: 0 20px;     
+     }
+     .main-logo {
+       width: 236px;
+       height: 52px;
+     }
+   }
+   
