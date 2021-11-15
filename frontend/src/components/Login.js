@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import '../Login.css';
 import logo from '../logo.png';
-import customAxios from "../customAxios";
+import LoginAxios from "../apis/LoginAxios";
 
 
 const Login= () => {
@@ -10,22 +10,13 @@ const Login= () => {
     const [userPw, setUserPw] = useState("");
 
     function submit() {
-        console.log(userId);
-        console.log(userPw);
-
-    }
-
-    function testM(id,pw){
-        setUserId(id);
-        setUserPw(pw);
-        console.log(userId);
-        console.log(userPw);
+        LoginAxios('/test',userId,userPw);
     }
     // 첫번째 렌더링을 다 마친 후 실행합니다.
     useEffect(
         () => {
             // 클라이언트의 IP주소를 알아내는 백엔드의 함수를 호출합니다.
-            customAxios('/test', testM);
+
         }, []
     );
 
