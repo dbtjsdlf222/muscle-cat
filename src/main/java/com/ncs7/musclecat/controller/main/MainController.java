@@ -10,16 +10,22 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController("/")
 @Slf4j  //log 라이브러리 검색추천
+@CrossOrigin(origins = "http://localhost:3000")
 public class MainController {
 
     @Autowired
     UserRepository userRepository;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @GetMapping("login")
     public ResponseEntity<String> login(@RequestParam String id,@RequestParam String pw) {
         userRepository.findByIdAndPw(id, pw);
         return new ResponseEntity<String>("API 성공", HttpStatus.OK);
     }
 
+    @GetMapping("test")
+    public ResponseEntity<String> login() {
+        System.out.println("성공");
+        return new ResponseEntity<String>("API 성공", HttpStatus.OK);
+    }
 }
