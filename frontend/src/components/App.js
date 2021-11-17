@@ -2,21 +2,18 @@ import Login from './Login';
 import React from "react";
 import {Route, Routes} from 'react-router-dom';
 import Nav from "./Nav";
-import MenuBar from "./MenuBar";
+import SideBar from "./SideBar";
 
 
 
 function App() {
   return (
-      <div>
             <Routes>
-                <Route exact={true} path='/' element={ <Nav /> } />
+                <Route exact={true} path='/' element={ <SideBar /> } />
                 <Route path='/login' element={ <Login /> } />
-                <Route path='/dashboard' element={ <MenuBar /> } />
+                <Route path='/dashboard' element={ <SideBar /> } />
                 <Route path='/nav' element={ <Nav /> } />
             </Routes>
-      </div>
-
   );
 }
 
