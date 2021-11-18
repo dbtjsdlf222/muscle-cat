@@ -1,11 +1,15 @@
 import React, {useState} from "react";
 import styles from "../css/SideBar.module.css"
-import { FaDesktop, FaListAlt, FaAlignJustify, FaUserCog, FaHouseUser, FaLaptop} from "react-icons/fa"
+import { FaDesktop, FaListAlt, FaAlignJustify, FaUserCog, FaHouseUser, FaLaptop,
+     FaChevronDown, FaChevronUp} from "react-icons/fa"
 import logo from "../logo_white.png"
 import {Link} from "react-router-dom";
+import SideBarItem from "./SideBarItem";
+import SideBarItemFold from "./SideBarItemFold";
 
 const SideBar = () => {
     const [active, setActive] = useState(false);
+
 
     function changeActive() {
         setActive(active ? false : true);
@@ -21,55 +25,11 @@ const SideBar = () => {
                                 <FaAlignJustify size="25" color="white" />
                             </i>
                         </li>
-                        <li>
-                            <Link to="/nav" >
-                                <i className={ styles.icon_menu }>
-                                    <FaDesktop size="25" color="white" />
-                                </i>
-                                <span>대시보드</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/nav" >
-                                <i className={ styles.icon_menu }>
-                                    <FaUserCog size="25" color="white" />
-                                </i>
-                                <span>
-                                    회원관리
-                                </span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/nav" >
-                                <i className={ styles.icon_menu }>
-                                    <FaListAlt size="25" color="white" />
-                                </i>
-                                <span>
-                                    게시글
-                            </span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/nav" >
-                                <i className={ styles.icon_menu }>
-                                    <FaHouseUser size="25" color="white" />
-                                </i>
-                                <span>
-                                    홈페이지관리
-                                </span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/nav" >
-                                <i className={ styles.icon_menu }>
-                                    <FaLaptop size="25" color="white" />
-                                </i>
-                                <span>
-                                    포스이동
-                                </span>
-                            </Link>
-                        </li>
-
+                        <SideBarItem url="/dashboard" icon={<FaDesktop size="25" color="white" />} text="대시보드" isActive={active}/>
+                        <SideBarItem url="/member" icon={<FaUserCog size="25" color="white" />} text="회원관리" isActive={active}/>
+                        <SideBarItemFold url="/board" icon={<FaListAlt size="25" color="white" />} text="게시글" subItem={{"subpage":[{"pageLink":"/test","pageText": "공지사항"},{"pageLink":"/test2","pageText": "건의사항"}]}}/>
+                        <SideBarItem url="/homepage" icon={<FaHouseUser size="25" color="white" />} text="홈페이지관리" isActive={active}/>
+                        <SideBarItem url="/pos" icon={<FaLaptop size="25" color="white" />} text="포스이동" />
                     </ul>
             </div>
         </div>

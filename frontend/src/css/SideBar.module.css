@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -22,7 +21,6 @@
 
 .menu_bar >ul > li:first-child {
     align-items: center;
-    display: flex;
     margin: 20px 0px 60px 0;
     position: relative;
     height: 30px;
@@ -31,25 +29,27 @@
 .menu_bar >ul > li:not(:first-of-type) {
     position: relative;
     width: 100%;
-    height: 50px;
     align-items: center;
-    display: flex;
     margin: 20px 0;
 }
 
-.menu_bar >ul > li:not(:first-of-type) > a {
+.item {
     align-items: center;
     display: flex;
     height: 100%;
     width: 100%;
     text-decoration: none;
-
     border-radius: 30px;
     padding-left: 0px;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
-.menu_bar >ul > li:not(:first-of-type) > a:hover {
+.item:hover {
     background: gray;
+}
+.item {
+    height: 50px;
 }
 
 .logo {
@@ -80,6 +80,12 @@
     left: 25%;
 }
 
+.icon_chevron {
+    display: none;
+    position: absolute;
+    left: 85%;
+}
+
 span{
     margin-left: 15px;
     font-size: 16px;
@@ -89,15 +95,33 @@ span{
     font-style: normal;
     display: none;
 }
-.active {
-    width: 250px;
+
+.itemActive {
+    background: gray;
+}
+.active .itemActive {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: all 100ms linear;
 
 }
+
+.active .itemActive +.subItem{
+    display: list-item;
+    padding: 6px 6px 14px 80px;
+    margin-top: -8px;
+    background: gray;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 100ms linear;
+}
+
+.active {
+    width: 250px;
+}
+
 .active > ul {
     padding: 20px;
-}
-.menu_bar >ul > li:first-child {
-    height: 0px;
 }
 
 .active > ul > li > .logo{
@@ -106,19 +130,39 @@ span{
     display: inline-block;
 }
 
-.active >ul >li> a> span {
+.active >ul >li> .item > span {
     display: inline-block;
 }
 
-.active >ul > li:not(:first-of-type) > a {
+.active >ul > li:not(:first-of-type) > .item {
     padding-left: 20px;
 }
 
-.active > ul > li > a > .icon_menu{
+.active > ul > li > .item > .icon_menu{
     left: 0;
     position: relative;
 }
 
 .active > ul > li > .icon_tab {
     left: 88%;
+}
+
+.active > ul > li > .item > .icon_chevron {
+    display: inline-block;
+}
+
+.subItem {
+    display: none;
+}
+
+.subItem a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+}
+
+.active .subItem span {
+    margin-left: 0;
+    display: inline-block;
 }
