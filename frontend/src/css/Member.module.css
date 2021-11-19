@@ -1,0 +1,15 @@
+.main_wrap {
+    padding:0 30px 0 102px;
+}
+
+.main_wrap  hr{
+    margin: 30px 0px;
+}
+
+.main_title {
+    padding-top: 30px;
+
+}
+.main_title span {
+    font-size: 32px;
+}

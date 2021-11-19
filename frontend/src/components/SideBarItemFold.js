@@ -13,7 +13,7 @@ const SideBarItemFold = (props) => {
 
     return(
         <li onClick={ changeActive }>
-            <div className={ styles.item + " " +(active ? styles.itemActive : ''  ) } >
+            <div className={ styles.item + " " +(active ? styles.itemActiveFold : ''  ) } >
                 <i className={ styles.icon_menu }>
                     {props.icon}
                 </i>
@@ -21,7 +21,7 @@ const SideBarItemFold = (props) => {
                     {props.text}
                 </span>
                 <i className={ styles.icon_chevron}>
-                    {active ? <FaChevronDown color="white"/> : <FaChevronUp color="white" /> }
+                    {active ? <FaChevronUp color="white"/> : <FaChevronDown color="white" /> }
                 </i>
             </div>
                 <SideBarItemFoldItem subItem={props.subItem}/>

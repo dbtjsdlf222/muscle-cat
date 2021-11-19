@@ -5,9 +5,9 @@ import React, {useState} from "react";
 const SideBarItem = (props) => {
 
     return(
-        <li>
-            <Link to={props.url} className={ styles.item} >
-                <i className={ styles.icon_menu }>
+        <li className={props.isActive ? "itemActive" : ''}>
+            <Link to={props.url} className={ styles.item + " " +(props.isActive ? styles.itemActive : ''  ) } >
+                <i className={ styles.icon_menu}>
                     {props.icon}
                 </i>
                 <span>

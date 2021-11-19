@@ -1,12 +1,8 @@
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 .wrap {
     height: 100%;
+    position: fixed;
+    z-index: 5;
 }
 
 .menu_bar {
@@ -45,11 +41,12 @@
     box-sizing: border-box;
 }
 
-.item:hover {
-    background: gray;
-}
 .item {
     height: 50px;
+}
+
+.item:hover {
+    background-color: gray;
 }
 
 .logo {
@@ -86,12 +83,11 @@
     left: 85%;
 }
 
-span{
+.menu_bar span{
     margin-left: 15px;
     font-size: 16px;
     color: white;
     font-weight: 400;
-    font-family: "GmarketSansMedium";
     font-style: normal;
     display: none;
 }
@@ -99,22 +95,68 @@ span{
 .itemActive {
     background: gray;
 }
-.active .itemActive {
+.itemActiveFold {
+    background: gray;
+}
+.active .itemActiveFold {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    transition: all 100ms linear;
 
 }
 
-.active .itemActive +.subItem{
+.active .itemActiveFold +.subItem{
     display: list-item;
-    padding: 6px 6px 14px 80px;
+    padding: 10px 10px;
     margin-top: -8px;
     background: gray;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    transition: all 100ms linear;
+    text-align: center;
+    list-style: none;
 }
+
+.notActive .itemActiveFold +.subItem {
+    display: block;
+    left: 138%;
+    position: absolute;
+    top: -50%;
+    margin-top: 0;
+    padding: 10px 20px;
+    white-space: nowrap;
+    background-color: gray;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+}
+.notActive .itemActiveFold +.subItem:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: gray;
+    border-left: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.notActive .itemActiveFold +.subItem span {
+    margin-left: 0;
+}
+.notActive .itemActiveFold +.subItem li {
+    width: 100%;
+}
+
+.notActive {
+
+}
+
+.itemActiveFold +.subItem span {
+    display: inline-block;
+}
+
 
 .active {
     width: 250px;
@@ -159,10 +201,18 @@ span{
     list-style: none;
     text-decoration: none;
     color: white;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+}
 
+.subItem a:hover {
+    background-color: #605f5f;
 }
 
 .active .subItem span {
     margin-left: 0;
     display: inline-block;
 }
+
+
