@@ -30,6 +30,7 @@ const Dashboard = (props) => {
                         <DashboardItem title="방문 수" content_main="55" content_sub="명" />
                         <DashboardItem title="PT" content_main="30" content_sub="명" />
                         <DashboardItem title="테스트" content_main="10" content_sub="개" />
+
                     </ul>
                 </div>
                 <div className={ styles.status_list }>

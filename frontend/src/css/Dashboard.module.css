@@ -103,7 +103,7 @@
     display: inline-block;
     margin: 0 20px;
     position: relative;
-    border: 2px solid #343232;
+    border: 1px solid #343232;
     overflow:auto;
 }
 
@@ -127,10 +127,6 @@
 .status_item_list table td {
     border: 1px solid #c5c5c5;
     padding: 10px;
-}
-
-.status_item_list table tbody {
-
 }
 
 .status_item_list table th:first-child, td:first-child {

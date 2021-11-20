@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react';
 import styles from '../css/Login.module.css';
 import logo from '../logo.png';
 import LoginAxios from "../apis/LoginAxios";
+import {Link} from "react-router-dom";
 
 
 const Login= () => {
@@ -63,6 +64,15 @@ const Login= () => {
                             </div>
                         </div>
                     </div>
+                    <div className={ styles.link_box}>
+                        <Link to="/test1">아이디 찾기
+                        </Link>
+                        <Link to="/test1">비밀번호 찾기
+                        </Link>
+                        <Link to="/test1">회원가입
+                        </Link>
+                    </div>
+                    
                 </div>
             </div>
         </div>

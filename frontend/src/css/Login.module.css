@@ -112,6 +112,21 @@
      cursor: pointer;
      
    }
+   .link_box {
+       width: 100%;
+       margin-top: 10px;
+       position: relative;
+       text-align: center;
+   }
+
+   .link_box a{
+       color: black;
+       text-decoration: none;
+       margin-right: 10px;
+   }
+
+
+
    
    @media (max-width: 632px){
      .login_box {
