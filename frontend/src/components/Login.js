@@ -69,7 +69,7 @@ const Login= () => {
                         </Link>
                         <Link to="/test1">비밀번호 찾기
                         </Link>
-                        <Link to="/test1">회원가입
+                        <Link to="/singup">회원가입
                         </Link>
                     </div>
                     
