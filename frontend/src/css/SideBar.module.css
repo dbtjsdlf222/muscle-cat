@@ -166,7 +166,7 @@
     padding: 20px;
 }
 
-.active > ul > li > .logo{
+.active > ul > li > a>.logo{
     width: 130px;
     height: 30px;
     display: inline-block;

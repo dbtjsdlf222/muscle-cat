@@ -25,7 +25,7 @@ const Login= () => {
         <div className={ styles.warp }>
             <div className={ styles.header }>
                 <div className={ styles.logo_box }>
-                    <img src={ logo } className={ styles.main_logo } alt="logo" />
+                    <Link to={'/'}><img src={ logo } className={ styles.main_logo } alt="logo" /></Link>
                 </div>
             </div>
             <div>

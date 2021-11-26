@@ -20,7 +20,7 @@ const SideBar = (props) => {
             <div className={ styles.menu_bar + " " +(active ? styles.active : styles.notActive  )}>
                     <ul>
                         <li>
-                            <img src={ logo } className={ styles.logo } />
+                            <Link to={'/'}><img src={ logo } className={ styles.logo }/></Link>
                             <i className={ styles.icon_tab } onClick={ changeActive }>
                                 <FaAlignJustify size="25" color="white" />
                             </i>
