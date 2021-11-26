@@ -1,37 +1,37 @@
-import '../css/SingUp.css';
+import styles from '../css/SingUp.module.css';
+import {Link} from "react-router-dom";
+import logo from "../logo_white.png"
 
 function Singup(){
     return(
-      <div className=''>
-          <form action="/" method="post" name="form" id="form">
-              <div id="signup">
-                  <ul className="sign_upA">
+      <div className={styles.signup}>
+          <div className={logo}>
+              <Link to={'/'}><img src={ logo } className={ styles.logo }/></Link>
+         </div>
+           <form action="/" method="post" name="form" id="form">
+              <div className={styles.profile}>
+                  <ul>
                       <li id="index"><p>이름</p></li>
                       <li><input type="text" name="userName" id="userName" placeholder="이름을 입력하세요"/></li>
-                  </ul>
-                  <ul className="sign_upA">
                       <li id="index"><p>아이디</p></li>
                       <li><input type="text" name="userID" id="userID" placeholder="아이디를 입력하세요" minLength="6"
                                  maxLength="16"/>
                           <button type="button" name="idCheck" id="idCheck" onClick="idCheck1()" value="중복확인">중복확인
                           </button></li>
-                  </ul>
-                  <ul className="sign_upA" >
+
                       <li>6~16자 영문(소문자), 숫자
                           입력가능합니다.
                       </li>
-                  </ul>
-                  <ul className="sign_upA" >
+
+
                       <li id="index"><p>비밀번호</p></li>
                       <li><input type="password" name="userPW" className="pw" id="userPW" placeholder="비밀번호를 입력하세요"
                                  minLength="6" maxLength="16"/></li>
-                  </ul>
-                  <ul className="sign_upA" >
+
                       <li >6~16자 영문(소문자), 숫자, 특수문자
                           입력가능합니다.
                       </li>
-                  </ul>
-                  <ul className="sign_upA" >
+
                       <li id="index"><p>비밀번호 확인</p></li>
                       <li><input type="password" name="pwCheck" className="pw" id="pwCheck" minLength="6"
                                  maxLength="16"/></li>
