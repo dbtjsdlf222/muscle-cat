@@ -4,7 +4,7 @@ import logo from "../logo_white.png"
 
 function Singup(){
     return(
-        <div className={styles.main}>
+        <div className={styles.frame}>
 
       <div className={styles.signup}>
           <div className={logo}>
@@ -45,24 +45,24 @@ function Singup(){
 
                   </ul>
 
-                  <ul className="sign_upA">
+                  <ul>
                       <li id="index"><p>이메일</p></li>
                       <li><input type="text" name="email" id="email"/></li>
                       <li>
                           <div className="check_font" id="emailCheck"></div>
                       </li>
                   </ul>
-                  <ul className="sign_upA" >
+                  <ul >
                       <li id="index" id="address"><p>주센터</p></li>
                       <li><input type="text" id="zipNo" name="zipNo" />
                           <button className={styles.button_size}type="button" id="addrfind" onClick="goPopup();"
-                                 >주소 찾기
+                                 >센터찾기
                           </button></li>
                       <input type="hidden" id="address2" value="주소찾기"/>
                   </ul>
               </div>
               <div className={styles.button_send}>
-                  <button className={styles.button_size} id="submit1" type="button" onClick="check();">제출하기</button>
+                  <button className={styles.button_size} id="submit1" type="button" onClick="check();">가입하기</button>
                   <button className={styles.button_size} id="reset" type="reset">다시쓰기</button>
               </div>
           </form>

@@ -1,0 +1,36 @@
+
+
+.frame{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eceff1;
+    width: 100%;
+    height: 100%;
+}
+.advertisement{
+    width: 50%;
+    height: 100%;
+}
+div >img{
+    width: 100%;
+    height: 100%;
+}
+.number{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+}
+.number>table{
+    width: 100%;
+}
+
+.number>table>tr>td{
+    border: 1px solid black;
+}
+.number>table>tr>td>input{
+    width: 100%;
+    font-size: large;
+}
+
