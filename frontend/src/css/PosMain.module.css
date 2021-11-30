@@ -18,19 +18,23 @@ div >img{
 .number{
     width: 50%;
     height: 100%;
-    display: flex;
-    align-items: stretch;
-    text-align: center;
 }
 .number>table{
     width: 100%;
+    height: 100%;
 }
 
-.number>table>tr>td{
+.number>table>tbody{
+    text-align: center;
+    background-color: red;
+}
+
+.number>table>tbody>tr>td{
     border: 1px solid black;
 }
-.number>table>tr>td>input{
+.number>table>tbody>tr>td>input{
     width: 100%;
+    height: 100%;
     font-size: large;
 }
 
