@@ -36,7 +36,7 @@ function Posmain(){
                     <tr>
                         <td>확인</td>
                         <td onClick={()=>add(0)}>0</td>
-                        <td onClick={()=>tetete('')}>취소</td>
+                        <td onClick={()=>setmembership('')}>취소</td>
                     </tr>
                     <tr>
                         <td colSpan={3}><input type='submit' value={membership}/></td>
