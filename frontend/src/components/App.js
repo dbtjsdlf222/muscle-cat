@@ -17,7 +17,6 @@ function App() {
                 <Route path='/member' element={ <Member url="member"/> } />
                 <Route path='/singup' element={ <Singup url="singup"/> } />
                 <Route path='/pos' element={ <Pos url="pos"/> } />
-
             </Routes>
   );
 }

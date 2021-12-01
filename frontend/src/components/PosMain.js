@@ -3,11 +3,12 @@ import {useState} from 'react';
 import Mini from '../minion.png'
 
 
-
 function Posmain(){
-    var [membership,tetete] = useState('')
+
+
+    var [membership,setmembership] = useState('')
     function add(a){
-        tetete(membership+a);
+        setmembership(membership+a);
             }
     return(
         <div className={Styles.frame}>
