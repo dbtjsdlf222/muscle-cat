@@ -24,8 +24,8 @@ function Singup() {
                             <li>
                                 <div>
                                     <input type="text" name="userID" id="userID" placeholder="아이디를 입력하세요" minLength="6"
-                                           maxLength="16"
-                                           onBlur={(e)=>action(e.target.value)}/>
+                                           maxLength="16" onBlur={(e)=>action(e.target.value)}/>
+
                                 </div>
                             </li>
 

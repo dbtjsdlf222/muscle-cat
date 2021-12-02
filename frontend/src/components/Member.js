@@ -1,6 +1,7 @@
 import styles from "../css/Member.module.css"
 import SideBar from "./SideBar";
 import { FaSearch, FaUserPlus } from "react-icons/fa"
+import dummy from "../db/data.json";
 
 
 const Member = (props) => {
@@ -50,126 +51,21 @@ const Member = (props) => {
                             <th>관리</th>
                         </thead>
                         <tbody>
+                                {dummy.member.map(dmber => (
                             <tr>
-                                <td>10</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
+                                    <td>{dmber.num}</td>
+                                    <td>{dmber.sex}</td>
+                                    <td>{dmber.id}</td>
+                                    <td>{dmber.pon}</td>
+                                    <td>{dmber.name}</td>
+                                    <td>{dmber.true}</td>
                                 <td>
                                     <button>수정</button>
                                     <button>삭제</button>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>남</td>
-                                <td>55361725</td>
-                                <td>010-5536-1725</td>
-                                <td>이현호</td>
-                                <td>사용</td>
-                                <td>
-                                    <button>수정</button>
-                                    <button>삭제</button>
-                                </td>
-                            </tr>
+                                ))}
+
                         </tbody>
                     </table>
 

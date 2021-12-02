@@ -12,7 +12,7 @@ const SideBar = (props) => {
     console.log(props.url)
 
     function changeActive() {
-        setActive(active ? false : true);
+        setActive(!active);
     }
 
     return(
