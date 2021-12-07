@@ -1,11 +1,11 @@
-import Login from './Login';
+import Login from './center/components/Login';
 import React from "react";
 import {Route, Routes} from 'react-router-dom';
-import Dashboard from "./Dashboard";
-import Member from "./Member";
-import Singup from "./Singup";
-import Pos  from "./PosMain";
-import PT from "./PT";
+import Dashboard from "./center/components/Dashboard";
+import Member from "./center/components/Member";
+import Singup from "./center/components/Singup";
+import Pos  from "./center/components/PosMain";
+import PT from "./center/components/PT";
 
 
 
