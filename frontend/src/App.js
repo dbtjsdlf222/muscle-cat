@@ -6,13 +6,16 @@ import Member from "./center/components/Member";
 import Singup from "./center/components/Singup";
 import Pos  from "./center/components/PosMain";
 import PT from "./center/components/PT";
+import Main from "./Main";
+import User_Main from "./user/components/User_Main";
 
 
 
 function App() {
   return (
             <Routes>
-                <Route exact={true} path='/' element={ <Login /> } />
+                <Route exact={true} path='/' element={ <Main /> } />
+                <Route path='/user_main' element={<User_Main/>} />
                 <Route path='/login' element={ <Login /> } />
                 <Route path='/dashboard' element={ <Dashboard url="dashboard"/> } />
                 <Route path='/member' element={ <Member url="member"/> } />

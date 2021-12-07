@@ -1,7 +1,7 @@
 import styles from "../css/Member.module.css"
 import SideBar from "./SideBar";
 import { FaSearch, FaUserPlus } from "react-icons/fa"
-import dummy from "../../db/data.json";
+import dummy from "../db/data.json";
 
 
 const Member = (props) => {
