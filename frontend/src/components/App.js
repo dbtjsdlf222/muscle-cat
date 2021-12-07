@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard";
 import Member from "./Member";
 import Singup from "./Singup";
 import Pos  from "./PosMain";
+import PT from "./PT";
 
 
 
@@ -15,6 +16,7 @@ function App() {
                 <Route path='/login' element={ <Login /> } />
                 <Route path='/dashboard' element={ <Dashboard url="dashboard"/> } />
                 <Route path='/member' element={ <Member url="member"/> } />
+                <Route path='/pt' element={ <PT url="pt"/> } />
                 <Route path='/singup' element={ <Singup url="singup"/> } />
                 <Route path='/pos' element={ <Pos url="pos"/> } />
             </Routes>
