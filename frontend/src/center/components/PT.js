@@ -2,7 +2,7 @@ import SideBar from "./SideBar";
 import styles from "../css/PT.module.css";
 import React, {useState} from "react";
 import moment from 'moment';
-import { FaCaretLeft, FaCaretRight } from "react-icons/fa"
+import { FaCaretLeft, FaCaretRight,FaTimes } from "react-icons/fa"
 
 const PT = (props) => {
     const [getMoment, setMoment] = useState(moment);
@@ -11,37 +11,47 @@ const PT = (props) => {
     const lastWeek = today.clone().endOf('month').week() === 1 ? 53 :today.clone().endOf('month').week();
 
     const calendarArr=()=>{
-        let result = [];
+        let result = [
+            <div className={ styles.calendar_week }>
+                <div>일</div>
+                <div>월</div>
+                <div>화</div>
+                <div>수</div>
+                <div>목</div>
+                <div>금</div>
+                <div>토</div>
+            </div>
+        ];
         let week = firstWeek;
+        
         for ( week; week <= lastWeek; week++) {
             result = result.concat(
-                <tr key={week}>
+                <div className={ styles.calendar_day }>
                     {
                         Array(7).fill(0).map((data, index) => {
                             let days = today.clone().startOf('year').week(week).startOf('week').add(index, 'day');
-
                             if(moment().format('YYYYMMDD') === days.format('YYYYMMDD')){
                                 return(
-                                    <td key={index} style={{backgroundColor:'red'}} >
-                                        <span>{days.format('D')}</span>
-                                    </td>
+                                    <div key={index}  >
+                                        <span className={ styles.today }>{days.format('D')}</span>
+                                    </div>
                                 );
-                            }else if(days.format('MM') !== today.format('MM')){
+                            }else if(today.format('YYYYMM') === days.format('YYYYMM')){
                                 return(
-                                    <td key={index} style={{backgroundColor:'gray'}} >
+                                    <div key={index}  >
                                         <span>{days.format('D')}</span>
-                                    </td>
+                                    </div>
                                 );
-                            }else{
+                            }else {
                                 return(
-                                    <td key={index}  >
-                                        <span>{days.format('D')}</span>
-                                    </td>
+                                    <div>
+                                        <span></span>
+                                    </div>
                                 );
                             }
                         })
                     }
-                </tr>
+                </div>
             );
         }
         return result;
@@ -63,14 +73,15 @@ const PT = (props) => {
                     <span>{today.format('YYYY 년 MM 월')}</span>
                     <button className={ styles.btn } onClick={()=>{ setMoment(getMoment.clone().add(1, 'month')) }}>
                         <FaCaretRight size="30" />
+
                     </button>
                 </div>
-                <table>
-                    <tbody>
+                <div className={ styles.calendar_wrap }>
                     {calendarArr()}
-                    </tbody>
-                </table>
-
+                </div>
+                <div className={ styles.flex_box }>
+                    <FaTimes size="40" color="white" />
+                </div>
             </div>
         </>
     );
