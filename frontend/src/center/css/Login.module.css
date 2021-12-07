@@ -61,14 +61,14 @@
    }
    
    .icon_id {
-     background-image: url(../login_person.png);
+     background-image: url(../../login_person.png);
      width: 20px;
      height: 20px;
      display: table-cell;
    }
    
    .icon_pw {
-     background-image: url(../login_lock.png);
+     background-image: url(../../login_lock.png);
      width: 20px;
      height: 20px;
      display: table-cell;

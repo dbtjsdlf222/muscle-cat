@@ -1,6 +1,6 @@
 import Styles from '../css/PosMain.module.css'
 import {useState} from 'react';
-import Mini from '../minion.png'
+import Mini from '../../minion.png'
 
 
 function Posmain(){

@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styles from "../css/SideBar.module.css"
 import { FaDesktop, FaListAlt, FaAlignJustify, FaUserCog, FaHouseUser, FaLaptop,
      FaChevronDown, FaChevronUp, FaCalendarAlt} from "react-icons/fa"
-import logo from "../logo_white.png"
+import logo from "../../logo_white.png"
 import {Link} from "react-router-dom";
 import SideBarItem from "./SideBarItem";
 import SideBarItemFold from "./SideBarItemFold";
