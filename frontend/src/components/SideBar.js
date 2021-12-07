@@ -9,7 +9,6 @@ import SideBarItemFold from "./SideBarItemFold";
 
 const SideBar = (props) => {
     const [active, setActive] = useState(false);
-    console.log(props.url)
 
     function changeActive() {
         setActive(!active);

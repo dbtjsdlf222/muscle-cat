@@ -5,10 +5,10 @@ import {Link} from "react-router-dom";
 const SideBarItemFoldItem = (props) => {
     return(
         <ul className={ styles.subItem}>
-            {props.subItem.subpage.map( n =>
+            {props.subItem.subpage.map( sub =>
                 <li>
-                    <Link to={n.pageLink}>
-                        <span>{n.pageText}</span>
+                    <Link to={sub.pageLink}>
+                        <span>{sub.pageText}</span>
                     </Link>
                 </li>
             )}

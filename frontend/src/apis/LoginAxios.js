@@ -1,9 +1,9 @@
 import axios from 'axios'; // 액시오스
 
-export default function LoginAxios(url, id, pw) {
+export default function LoginAxios(id, pw) {
     console.log(id);
     console.log(pw);
-   axios.post(url,null,{ params : {
+   axios.post("/test",null,{ params : {
            "id" : id,
            "pw" : pw
        }})

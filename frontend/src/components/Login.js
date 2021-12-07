@@ -11,15 +11,9 @@ const Login= () => {
     const [userPw, setUserPw] = useState("");
 
     function submit() {
-        LoginAxios('/test',userId,userPw);
+        LoginAxios(userId,userPw);
     }
-    // 첫번째 렌더링을 다 마친 후 실행합니다.
-    useEffect(
-        () => {
-            // 클라이언트의 IP주소를 알아내는 백엔드의 함수를 호출합니다.
 
-        }, []
-    );
 
     return(
         <div className={ styles.warp }>
