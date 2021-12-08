@@ -1,12 +1,14 @@
 import {Link} from "react-router-dom";
 import logo from "../../logo_white.png"
 import styles from "../css/User_Main.module.css";
+import cat from "../../cat.jpeg";
+import cat2 from "../../cat2.jpeg";
 
 
 export default function User_Main() {
 
     return (
-        <div>
+        <div className={styles.frame}>
             <div className={styles.hader}>
                 <ul>
                     <div className={styles.logo_btn}>
@@ -46,12 +48,16 @@ export default function User_Main() {
                             <li>스트레칭</li>
                         </ul>
                     </li>
-                    <li>
+
+                    <div className={styles.login}>
                         <a><button>로그인</button></a>
-                    </li>
+                    </div>
                     </div>
                 </ul>
-
+            </div>
+            <div className={styles.body}>
+                <a target={"_blank"} href={"https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%ED%8C%8C%ED%8C%8C%EA%B3%A0"}><img src={cat}/></a>
+                <a href={"https://translate.google.com/"} target={"_blank"}><img src={cat2}/></a>
             </div>
         </div>
     );

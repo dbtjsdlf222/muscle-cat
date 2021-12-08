@@ -1,44 +1,80 @@
 
+.frame {
+    width: 100%;
+    height: 100vh;
+}
 .hader {
     width: 100%;
-    height: 10%;
-    background: #c5c5c5;
-
+    height: 15%;
+background-color: #c5c5c5;
 }
 
 .hader > ul {
     display: flex;
     flex-direction: row;
-
+    align-items: center;
 }
-
-.menu {
-    width: 70%;
-    height: 10%;
-    display: flex;
-}
-
-.menu > li {
-    width: 20%;
-    height: 100%;
-    border: 1px solid black;
-    text-align: center;
-}
-.menu>li>ul{
-    visibility: hidden;
-    border: 1px solid red;
-}
-
 
 .logo_btn {
     padding: 20px;
     width: 30%;
     height: 10%;
     text-align: center;
-
 }
 
 .logo {
     width: 80%;
     height: 100%;
 }
+
+.menu {
+    width: 70%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu > li {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+
+}
+.menu>li:hover{
+    background-color: white;
+    height: 20px;
+    border-radius: 30px;
+}
+.menu>li>ul{
+    width: 100%;
+    visibility: hidden;
+    height: 0px;
+}
+.menu>li>ul>li{
+    background-color: #c5c5c5;
+    z-index: 6;
+}
+.menu:hover li>ul{
+    visibility: visible;
+    margin-top: 10px;
+}
+
+.login{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.login>a>button{
+    width: 50%;
+    height: 100%;
+}
+.body{
+    width: 100%;
+    height: 70%;
+}
+.body>a>img{
+    width: 50%;
+    height: 100%;
+}
+
