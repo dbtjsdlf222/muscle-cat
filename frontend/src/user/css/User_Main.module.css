@@ -3,6 +3,7 @@
     width: 100%;
     height: 100vh;
 }
+
 .hader {
     width: 100%;
     height: 15%;
@@ -41,23 +42,30 @@ background-color: #c5c5c5;
     text-align: center;
 
 }
+
 .menu>li:hover{
     background-color: white;
     height: 20px;
     border-radius: 30px;
 }
+
 .menu>li>ul{
     width: 100%;
     visibility: hidden;
     height: 0px;
 }
+
 .menu>li>ul>li{
     background-color: #c5c5c5;
-    z-index: 6;
+    position: relative;
+    z-index: 10;
+    height: 40px;
+    opacity: 0.8;
 }
-.menu:hover li>ul{
+
+.menu> li:hover li{
     visibility: visible;
-    margin-top: 10px;
+
 }
 
 .login{
@@ -65,14 +73,19 @@ background-color: #c5c5c5;
     height: 100%;
     text-align: center;
 }
+
 .login>a>button{
     width: 50%;
     height: 100%;
 }
+
 .body{
+    position: relative;
+    z-index: 2;
     width: 100%;
     height: 70%;
 }
+
 .body>a>img{
     width: 50%;
     height: 100%;
