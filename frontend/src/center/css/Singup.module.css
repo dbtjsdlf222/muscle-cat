@@ -1,65 +1,100 @@
-
-.frame {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #eceff1;
-    width: 100%;
+.warp {
+    position: relative;
     height: 100%;
+
 }
 
-.signup {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    display: flex;
+.header {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+
 }
 
-.logo {
+.logo_box {
+    position: relative;
     width: 300px;
-    height: 30px;
-    background-color: black;
-    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.profile {
-    margin-top: 30px;
+.main_logo {
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    margin-top: 110px;
 }
 
-.profile > ul > li > div {
+.singup_box {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.singup_text_box {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input_wrap {
+    position: relative;
+    padding: 20px;
+}
+
+.input_wrap {
+    position: relative;
+    padding: 20px;
+}
+
+.input_box {
+    position: relative;
+    border: 1px solid gray;
+    padding: 16px 17px;
+    display: table;
     width: 100%;
-    height: 50px;
-    border: 1px solid black;
-    background-color: white;
-    margin: 10px 0px 10px 0px;
-}
-.profile > ul > li >div> input {
-    width: 100%;
-    height: 50px;
-    font-size: larger;
-    margin-left: 10px;
+    height: 51px;
+    box-sizing: border-box;
 }
 
-.input_error {
+input {
+    border: none;
+    appearance: none;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+.input_title:not(:first-child) {
+    margin-top: 20px;
+}
+
+.input_text {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+.error_box {
+    margin-top: 5px;
+}
+
+.error_box span {
     color: red;
-    display: none;
+    font-size: 14px;
 }
+@media (max-width: 632px) {
+    .singup_box {
+        width: 100%;
+        padding: 0 20px;
+    }
 
-.button_size {
-    width: 70px;
-    height: 50px;
-    margin-left: 5px;
-    border-radius: 10px;
-}
-
-.button_send {
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-}
-
-div > .button_size {
-    width: 100%;
-    margin-top: 10px;
-
+    .main_logo {
+        width: 236px;
+        height: 52px;
+    }
 }
