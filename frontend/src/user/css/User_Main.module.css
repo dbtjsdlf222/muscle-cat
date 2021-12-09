@@ -55,12 +55,19 @@ background-color: #c5c5c5;
     height: 0px;
 }
 
-.menu>li>ul>li{
+.menu>li>ul>a>li{
     background-color: #c5c5c5;
     position: relative;
     z-index: 10;
     height: 40px;
     opacity: 0.8;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
 }
 
 .menu> li:hover li{

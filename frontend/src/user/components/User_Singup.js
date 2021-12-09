@@ -1,12 +1,12 @@
-import styles from '../css/SingUp.module.css';
+import styles from '../css/User_SingUp.module.css';
 import {Link} from "react-router-dom";
 import logo from "../../logo_white.png"
-import action from "../apis/action";
+import User_SingupIteam from "./User_SingupItem";
+import {action} from "../apis/action";
 
-function Singup() {
+function User_Singup() {
     return (
         <div className={styles.frame}>
-
             <div className={styles.signup}>
                 <div className={logo}>
                     <Link to={'/'}><img src={logo} className={styles.logo}/></Link>
@@ -14,21 +14,15 @@ function Singup() {
                 <form action="/" method="post" name="form" id="form">
                     <div className={styles.profile}>
                         <ul>
-                            <li id="index"><p>이름</p></li>
-                            <li>
-                                <div>
-                                    <input type="text" name="userName" id="userName" placeholder="이름을 입력하세요"/>
-                                </div>
-                            </li>
-                            <li id="index"><p>아이디</p></li>
-                            <li>
-                                <div>
-                                    <input type="text" name="userID" id="userID" placeholder="아이디를 입력하세요" minLength="6"
-                                           maxLength="16" onBlur={(e)=>action(e.target.value)}/>
-
-                                </div>
-                            </li>
-
+                            <User_SingupIteam List_name={'바보'}/>
+                            <User_SingupIteam List_name={'아이디'} test={(e)=>action(e.target.value)}/>
+                            {/*<li id="index"><p>아이디</p></li>*/}
+                            {/*<li>*/}
+                            {/*    <div className={styles.inputbox}>*/}
+                            {/*        <input type="text"  placeholder="아이디를 입력하세요" minLength="6"*/}
+                            {/*               maxLength="16" onBlur={(e)=>action(e.target.value)}/>*/}
+                            {/*    </div>*/}
+                            {/*</li>*/}
                             <li className={styles.input_error}>아이디는 6~15자 영문, 숫자
                                 로만 입력가능합니다.
                             </li>
@@ -38,7 +32,7 @@ function Singup() {
                                 <p>비밀번호</p>
                             </li>
                             <li>
-                                <div>
+                                <div className={styles.inputbox}>
                                 <input type="password" name="userPW" className="pw" id="userPW"
                                        placeholder="비밀번호를 입력하세요"
                                        minLength="6" maxLength="16"/>
@@ -53,7 +47,7 @@ function Singup() {
                                 <p>비밀번호 확인</p>
                             </li>
                             <li>
-                                <div>
+                                <div className={styles.inputbox}>
                                 <input type="password" name="pwCheck" className="pw" id="pwCheck" minLength="6"
                                        maxLength="16"/>
                                 </div>
@@ -67,7 +61,7 @@ function Singup() {
                                 <p>이메일</p>
                             </li>
                             <li>
-                                <div>
+                                <div className={styles.inputbox}>
                                 <input type="text" name="email" id="email"/>
                                 </div>
                             </li>
@@ -75,7 +69,7 @@ function Singup() {
                                 <p>주센터</p>
                             </li>
                             <li>
-                                <div>
+                                <div className={styles.inputbox}>
                                 <input type="text" id="zipNo" name="zipNo"/>
                                 </div>
                             </li>
@@ -93,4 +87,4 @@ function Singup() {
     );
 }
 
-export default Singup;
+export default User_Singup;

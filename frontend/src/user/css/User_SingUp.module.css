@@ -5,7 +5,7 @@
     align-items: center;
     background-color: #eceff1;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .signup {
@@ -13,29 +13,40 @@
     align-items: center;
     margin-top: 100px;
     display: flex;
+    width: 100%;
+    height: 100%;
+
 }
 
 .logo {
-    width: 300px;
-    height: 30px;
+    width: 80%;
+    height: 30%;
     background-color: black;
     padding: 30px;
 }
 
 .profile {
-    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+.profile >ul{
+    width: 100%;
+    height: 100%;
+}
+.profile>ul>li{
+    width: 100%;
+    height: 8%;
 }
 
-.profile > ul > li > div {
+.inputbox {
     width: 100%;
-    height: 50px;
+    height: 30px;
     border: 1px solid black;
     background-color: white;
-    margin: 10px 0px 10px 0px;
 }
-.profile > ul > li >div> input {
+.inputbox>input {
     width: 100%;
-    height: 50px;
+    height: 50%;
     font-size: larger;
     margin-left: 10px;
 }
