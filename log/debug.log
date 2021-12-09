@@ -1,8 +1,32 @@
-2021-12-02 01:42:40.856  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h2m56s371ms).
-2021-12-02 03:41:58.065  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m17s210ms).
-2021-12-02 05:37:02.900  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55m4s834ms).
-2021-12-02 07:35:03.012  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h58m113ms).
-2021-12-02 08:52:46.004  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h17m42s991ms).
-2021-12-02 10:10:18.134  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s920ms).
-2021-12-02 10:52:16.548  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s377ms).
-2021-12-02 11:40:31.310  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s526ms).
+2021-12-09 17:39:15.369  INFO 7744 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.13 on DESKTOP-I4DHMRD with PID 7744 (C:\Users\wjstk\Documents\myProject\muscle-cat\build\classes\java\main started by wjstk in C:\Users\wjstk\Documents\myProject\muscle-cat)
+2021-12-09 17:39:15.375  INFO 7744 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-09 17:39:15.874  INFO 7744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 17:39:15.874  INFO 7744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-09 17:39:15.900  INFO 7744 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-09 17:39:15.902  INFO 7744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JDBC repository interfaces.
+2021-12-09 17:39:15.908  INFO 7744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-09 17:39:15.908  INFO 7744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-09 17:39:15.933  INFO 7744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2021-12-09 17:39:16.359  INFO 7744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-09 17:39:16.369  INFO 7744 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-09 17:39:16.369  INFO 7744 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-09 17:39:16.440  INFO 7744 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-09 17:39:16.441  INFO 7744 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1034 ms
+2021-12-09 17:39:16.462  INFO 7744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-09 17:39:16.577  INFO 7744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-09 17:39:16.583  INFO 7744 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-09 17:39:16.684  INFO 7744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-09 17:39:16.727  INFO 7744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-09 17:39:16.757  INFO 7744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-09 17:39:16.844  INFO 7744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-09 17:39:17.139  INFO 7744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-09 17:39:17.145  INFO 7744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-09 17:39:17.415  WARN 7744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-09 17:39:17.548  INFO 7744 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-09 17:39:17.594  WARN 7744 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-09 17:39:17.714  INFO 7744 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-09 17:39:17.722  INFO 7744 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.688 seconds (JVM running for 3.306)
+2021-12-09 17:39:20.872  INFO 7744 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-09 17:39:20.873  INFO 7744 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-09 17:39:21.161  INFO 7744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-09 17:39:21.170  INFO 7744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

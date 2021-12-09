@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import logo from "../../logo_white.png"
 import action from "../apis/action";
 
-function Singup() {
+function SingUp() {
     return (
         <div className={styles.frame}>
 
@@ -93,4 +93,4 @@ function Singup() {
     );
 }
 
-export default Singup;
+export default SingUp;

@@ -1,9 +1,9 @@
 import styles from '../css/SingUp.module.css';
 import {Link} from "react-router-dom";
-import logo from "../../logo_white.png"
-import action from "../apis/action";
+import logo from "../../logo.png";
+import action from "../apis/action.js";
 
-function Singup() {
+const SingUp = () => {
     return (
         <div className={styles.frame}>
 
@@ -93,4 +93,4 @@ function Singup() {
     );
 }
 
-export default Singup;
+export default SingUp;
