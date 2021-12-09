@@ -1,0 +1,100 @@
+.warp {
+    position: relative;
+    height: 100%;
+
+}
+
+.header {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+
+}
+
+.logo_box {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_logo {
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    margin-top: 110px;
+}
+
+.singup_box {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.singup_text_box {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input_wrap {
+    position: relative;
+    padding: 20px;
+}
+
+.input_wrap {
+    position: relative;
+    padding: 20px;
+}
+
+.input_box {
+    position: relative;
+    border: 1px solid gray;
+    padding: 16px 17px;
+    display: table;
+    width: 100%;
+    height: 51px;
+    box-sizing: border-box;
+}
+
+input {
+    border: none;
+    appearance: none;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    height: 20px;
+}
+
+.input_title:not(:first-child) {
+    margin-top: 20px;
+}
+
+.input_text {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+}
+.error_box {
+    margin-top: 5px;
+}
+
+.error_box span {
+    color: red;
+    font-size: 14px;
+}
+@media (max-width: 632px) {
+    .singup_box {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .main_logo {
+        width: 236px;
+        height: 52px;
+    }
+}
