@@ -1,7 +1,6 @@
-import styles from '../css/SingUp.module.css';
+import styles from '../css/Singup.module.css';
 import {Link} from "react-router-dom";
 import logo from "../../logo.png"
-import action from "../apis/action.js";
 import React from "react";
 import SingUpInput from "./SingUpInput";
 
@@ -13,8 +12,8 @@ const SingUp = () => {
                     <Link to={'/'}><img src={ logo } className={ styles.main_logo } alt="logo" /></Link>
                 </div>
             </div>
-            <div className={ styles.singUp_box }>
-                <div className={ styles.singUp_wrap }>
+            <div className={ styles.singup_box }>
+                <div className={styles.input_wrap}>
                     <div>
                         <div className={ styles.input_wrap }>
                             <form action="/" method="post" name="form" id="form">

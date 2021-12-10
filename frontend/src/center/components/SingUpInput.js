@@ -1,4 +1,4 @@
-import styles from "../css/SingUp.module.css";
+import styles from "../css/Singup.module.css";
 import React from "react";
 
 const SingUpInput = (props) => {
