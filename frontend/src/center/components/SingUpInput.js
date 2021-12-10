@@ -1,7 +1,7 @@
 import styles from "../css/Singup.module.css";
 import React from "react";
 
-const SingupInput = (props) => {
+const SingUpInput = (props) => {
     return(
         <>
             <div className={ styles.input_title }>
@@ -14,4 +14,4 @@ const SingupInput = (props) => {
     );
 }
 
-export default SingupInput;
+export default SingUpInput;

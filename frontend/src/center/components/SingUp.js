@@ -3,9 +3,9 @@ import {Link} from "react-router-dom";
 import logo from "../../logo.png"
 import action from "../apis/action.js";
 import React from "react";
-import SingupInput from "./SingupInput";
+import SingUpInput from "./SingUpInput";
 
-const Singup = () => {
+const SingUp = () => {
     return (
         <div className={ styles.warp }>
             <div className={ styles.header }>
@@ -18,12 +18,12 @@ const Singup = () => {
                     <div>
                         <div className={ styles.input_wrap }>
                             <form action="/" method="post" name="form" id="form">
-                                <SingupInput id="center_name" title="센터명" ex="머슬캣헬스"/>
+                                <SingUpInput id="center_name" title="센터명" ex="머슬캣헬스"/>
                                 <div className={ styles.error_box }>
                                     <span>에러 메시지 입니다.</span>
                                 </div>
-                                <SingupInput id="franchise_name" title="지점명" ex="홍대입구역점"/>
-                                <SingupInput id="businessNumber" title="사업자번호" ex="101"/>
+                                <SingUpInput id="franchise_name" title="지점명" ex="홍대입구역점"/>
+                                <SingUpInput id="businessNumber" title="사업자번호" ex="101"/>
                             </form>
                         </div>
                     </div>
@@ -34,4 +34,4 @@ const Singup = () => {
     );
 }
 
-export default Singup;
+export default SingUp;
