@@ -1,76 +1,83 @@
 
 .frame {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #eceff1;
     width: 100%;
-    height: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
 }
 
 .signup {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 40%;
     height: 100%;
 
+}
+.logobox{
+    background-color: black;
+    margin-top: 10%;
+    width: 60%;
+    height: 10%;
+}
+.logobox>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    width: 80%;
-    height: 30%;
-    background-color: black;
-    padding: 30px;
+    height: 70%;
+    width: 90%;
 }
 
+.signup>form{
+    width: 100%;
+    height: 100%;
+}
 .profile {
     width: 100%;
     height: 100%;
+ margin-top: 7%;
 }
-.profile >ul{
+.profile>ul{
     width: 100%;
     height: 100%;
 }
-.profile>ul>li{
+.profile>ul>p{
+    font-size: small;
+    color: red;
+    margin-bottom: 1%;
+}
+.user_singupiteam{
     width: 100%;
     height: 8%;
 }
-
-.inputbox {
+.user_singupiteam>li{
     width: 100%;
-    height: 30px;
-    border: 1px solid black;
+    height: 70%;
+    margin-top: 1%;
+}
+.inputbox{
+    padding: 1%;
     background-color: white;
+    width: 99%;
+    height: 70%;
+    border: 1px solid;
 }
-.inputbox>input {
+.inputbox>input{
+    font-size: large;
+    height: 100%;
     width: 100%;
-    height: 50%;
-    font-size: larger;
-    margin-left: 10px;
 }
-
-.input_error {
-    color: red;
-    display: none;
+.button_send{
+    height: 4%;
+    text-align: center;
 }
-
-.button_size {
-    width: 70px;
-    height: 50px;
-    margin-left: 5px;
-    border-radius: 10px;
-}
-
-.button_send {
-    width: 500px;
-    display: flex;
-    justify-content: space-around;
-}
-
-div > .button_size {
-    width: 100%;
-    margin-top: 10px;
-
+.button_send>button{
+    width: 30%;
+    height: 100%;
 }
