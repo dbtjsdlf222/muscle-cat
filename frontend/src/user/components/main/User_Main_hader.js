@@ -1,14 +1,10 @@
+import styles from "../../css/User_Main.module.css";
 import {Link} from "react-router-dom";
-import logo from "../../logo_white.png"
-import styles from "../css/User_Main.module.css";
-import cat from "../../cat.jpeg";
-import cat2 from "../../cat2.jpeg";
-import {Attendance} from "../apis/action";
+import logo from "../../../logo_white.png";
 
-export default function User_Main() {
-
-    return (
-        <div className={styles.frame}>
+export default function User_Main_hader(){
+    return(
+        <div>
             <div className={styles.hader}>
                 <ul>
                     <div className={styles.logo_btn}>
@@ -58,7 +54,6 @@ export default function User_Main() {
                                 <a>
                                     <li>건의사항</li>
                                 </a>
-
                             </ul>
                         </li>
                         <li>
@@ -84,11 +79,8 @@ export default function User_Main() {
                     </div>
                 </ul>
             </div>
-            <div className={styles.body}>
-                <a target={"_blank"} href={"https://papago.naver.com"}><img src={cat}/></a>
-                <a href={"https://translate.google.com/"} target={"_blank"}><img src={cat2}/></a>
-            </div>
-        </div>
-    );
 
+
+        </div>
+    )
 }

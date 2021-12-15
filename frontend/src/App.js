@@ -7,9 +7,9 @@ import SingUp from "./center/components/SingUp";
 import Pos  from "./center/components/PosMain";
 import PT from "./center/components/PT";
 import Main from "./Main";
-import User_Main from "./user/components/User_Main";
+import User_Main from "./user/components/main/User_Main";
 import User_Login from "./user/components/User_Login";
-import Attendance from "./user/components/Attendance"
+import User_Attendance from "./user/components/User_Attendance"
 import User_Singup from "./user/components/User_Singup";
 
 
@@ -29,7 +29,7 @@ function App() {
                 <Route path='/user_main' element={<User_Main/>} />
                 <Route path='/user_login' element={ <User_Login /> } />
                 <Route path='/user_singup' element={ <User_Singup/> } />
-                <Route path='attendance' element={ <Attendance /> } />
+                <Route path='attendance' element={ <User_Attendance /> } />
             </Routes>
   );
 }
