@@ -6,9 +6,9 @@ export default function User_Main_hader() {
     return (
         <div className={styles.hader}>
             <div className={styles.logobox}>
-                <a href={'/'} className={styles.logolink}><img src={logo} className={styles.logo}/></a>
+                <a href={'/user_main'} className={styles.logolink}><img src={logo} className={styles.logo}/></a>
             </div>
-                <ul className={styles.menulist}>
+            <ul className={styles.menulist}>
                     <li><a>머슬캣</a>
                         <ul className={styles.menu}>
                             <li><a>센터소개</a></li>
@@ -39,12 +39,12 @@ export default function User_Main_hader() {
                             <li><a>스트레칭</a></li>
                         </ul>
                     </li>
-                <div className={styles.login}>
+            </ul>
+            <div className={styles.login}>
                     <Link to={'/user_login'}>
                         <button>로그인</button>
                     </Link>
-                </div>
-                </ul>
+            </div>
 
         </div>
 
