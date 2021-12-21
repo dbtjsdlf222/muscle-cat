@@ -1,8 +1,246 @@
-2021-12-02 01:42:40.856  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h2m56s371ms).
-2021-12-02 03:41:58.065  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h59m17s210ms).
-2021-12-02 05:37:02.900  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55m4s834ms).
-2021-12-02 07:35:03.012  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h58m113ms).
-2021-12-02 08:52:46.004  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h17m42s991ms).
-2021-12-02 10:10:18.134  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s920ms).
-2021-12-02 10:52:16.548  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s377ms).
-2021-12-02 11:40:31.310  WARN 12874 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s526ms).
+2021-12-21 14:01:01.622  INFO 13204 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.13 on DESKTOP-I4DHMRD with PID 13204 (C:\Users\wjstk\Documents\myProject\muscle-cat\build\classes\java\main started by wjstk in C:\Users\wjstk\Documents\myProject\muscle-cat)
+2021-12-21 14:01:01.628  INFO 13204 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-21 14:01:02.306  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:01:02.306  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-21 14:01:02.329  INFO 13204 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-21 14:01:02.330  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2021-12-21 14:01:02.336  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:01:02.337  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-21 14:01:02.353  INFO 13204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2021-12-21 14:01:02.683  INFO 13204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-21 14:01:02.690  INFO 13204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-21 14:01:02.690  INFO 13204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-21 14:01:02.763  INFO 13204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-21 14:01:02.764  INFO 13204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1105 ms
+2021-12-21 14:01:02.787  INFO 13204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-21 14:01:02.895  INFO 13204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-21 14:01:02.904  INFO 13204 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-21 14:01:03.002  INFO 13204 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-21 14:01:03.037  INFO 13204 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-21 14:01:03.063  INFO 13204 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-21 14:01:03.142  INFO 13204 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-21 14:01:03.397  INFO 13204 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-21 14:01:03.402  INFO 13204 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:01:03.635  WARN 13204 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-21 14:01:03.747  INFO 13204 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-21 14:01:03.790  WARN 13204 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-21 14:01:03.915  INFO 13204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-21 14:01:03.925  INFO 13204 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.701 seconds (JVM running for 3.28)
+2021-12-21 14:03:26.578  INFO 13204 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:03:26.578  INFO 13204 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-21 14:03:26.856  INFO 13204 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-21 14:03:26.869  INFO 13204 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-21 14:03:31.787  INFO 15428 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.13 on DESKTOP-I4DHMRD with PID 15428 (C:\Users\wjstk\Documents\myProject\muscle-cat\build\classes\java\main started by wjstk in C:\Users\wjstk\Documents\myProject\muscle-cat)
+2021-12-21 14:03:31.795  INFO 15428 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-21 14:03:32.517  INFO 15428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:03:32.518  INFO 15428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-21 14:03:32.541  INFO 15428 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-21 14:03:32.541  INFO 15428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JDBC repository interfaces.
+2021-12-21 14:03:32.547  INFO 15428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:03:32.548  INFO 15428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-21 14:03:32.568  INFO 15428 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+2021-12-21 14:03:32.888  INFO 15428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-21 14:03:32.896  INFO 15428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-21 14:03:32.896  INFO 15428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-21 14:03:32.981  INFO 15428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-21 14:03:32.982  INFO 15428 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1109 ms
+2021-12-21 14:03:33.002  INFO 15428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-21 14:03:33.105  INFO 15428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-21 14:03:33.113  INFO 15428 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-21 14:03:33.232  INFO 15428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-21 14:03:33.265  INFO 15428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-21 14:03:33.293  INFO 15428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-21 14:03:33.374  INFO 15428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-21 14:03:33.648  INFO 15428 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-21 14:03:33.654  INFO 15428 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:03:33.887  WARN 15428 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-21 14:03:34.011  INFO 15428 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-21 14:03:34.055  WARN 15428 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-21 14:03:34.178  INFO 15428 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-21 14:03:34.189  INFO 15428 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.875 seconds (JVM running for 4.161)
+2021-12-21 14:03:41.234  INFO 15428 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-21 14:03:41.237  INFO 15428 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-21 14:03:41.240  INFO 15428 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-21 14:04:17.051  INFO 15428 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:04:17.053  INFO 15428 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-21 14:04:17.323  INFO 15428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-21 14:04:17.340  INFO 15428 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-21 14:04:20.979  INFO 11952 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.13 on DESKTOP-I4DHMRD with PID 11952 (C:\Users\wjstk\Documents\myProject\muscle-cat\build\classes\java\main started by wjstk in C:\Users\wjstk\Documents\myProject\muscle-cat)
+2021-12-21 14:04:20.980  INFO 11952 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-21 14:04:21.451  INFO 11952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:04:21.452  INFO 11952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-21 14:04:21.477  INFO 11952 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-21 14:04:21.477  INFO 11952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2021-12-21 14:04:21.483  INFO 11952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:04:21.483  INFO 11952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-21 14:04:21.502  INFO 11952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2021-12-21 14:04:21.845  INFO 11952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-21 14:04:21.851  INFO 11952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-21 14:04:21.852  INFO 11952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-21 14:04:21.929  INFO 11952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-21 14:04:21.929  INFO 11952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 918 ms
+2021-12-21 14:04:21.954  INFO 11952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-21 14:04:22.058  INFO 11952 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-21 14:04:22.065  INFO 11952 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-21 14:04:22.165  INFO 11952 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-21 14:04:22.194  INFO 11952 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-21 14:04:22.222  INFO 11952 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-21 14:04:22.292  INFO 11952 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-21 14:04:22.551  INFO 11952 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-21 14:04:22.559  INFO 11952 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:04:22.779  WARN 11952 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-21 14:04:22.894  INFO 11952 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-21 14:04:22.941  WARN 11952 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-21 14:04:23.050  INFO 11952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-21 14:04:23.061  INFO 11952 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.418 seconds (JVM running for 2.952)
+2021-12-21 14:04:25.397  INFO 11952 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-21 14:04:25.400  INFO 11952 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-21 14:04:25.403  INFO 11952 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-21 14:04:50.570  INFO 11952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:04:50.570  INFO 11952 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-21 14:04:50.847  INFO 11952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-21 14:04:50.854  INFO 11952 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-21 14:04:54.292  INFO 13632 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.13 on DESKTOP-I4DHMRD with PID 13632 (C:\Users\wjstk\Documents\myProject\muscle-cat\build\classes\java\main started by wjstk in C:\Users\wjstk\Documents\myProject\muscle-cat)
+2021-12-21 14:04:54.295  INFO 13632 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-21 14:04:54.759  INFO 13632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:04:54.760  INFO 13632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-21 14:04:54.783  INFO 13632 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-21 14:04:54.784  INFO 13632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JDBC repository interfaces.
+2021-12-21 14:04:54.791  INFO 13632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:04:54.791  INFO 13632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-21 14:04:54.812  INFO 13632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2021-12-21 14:04:55.156  INFO 13632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-21 14:04:55.163  INFO 13632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-21 14:04:55.164  INFO 13632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-21 14:04:55.240  INFO 13632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-21 14:04:55.241  INFO 13632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 912 ms
+2021-12-21 14:04:55.263  INFO 13632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-21 14:04:55.377  INFO 13632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-21 14:04:55.384  INFO 13632 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-21 14:04:55.498  INFO 13632 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-21 14:04:55.533  INFO 13632 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-21 14:04:55.564  INFO 13632 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-21 14:04:55.643  INFO 13632 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-21 14:04:55.921  INFO 13632 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-21 14:04:55.927  INFO 13632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:04:56.162  WARN 13632 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-21 14:04:56.286  INFO 13632 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-21 14:04:56.330  WARN 13632 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-21 14:04:56.451  INFO 13632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-21 14:04:56.461  INFO 13632 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.522 seconds (JVM running for 3.116)
+2021-12-21 14:04:58.824  INFO 13632 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-21 14:04:58.827  INFO 13632 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-21 14:04:58.829  INFO 13632 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-21 14:05:18.735  INFO 13632 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:05:18.736  INFO 13632 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-21 14:05:19.025  INFO 13632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-21 14:05:19.040  INFO 13632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-21 14:31:09.136  INFO 14964 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.13 on DESKTOP-I4DHMRD with PID 14964 (C:\Users\wjstk\Documents\myProject\muscle-cat\build\classes\java\main started by wjstk in C:\Users\wjstk\Documents\myProject\muscle-cat)
+2021-12-21 14:31:09.139  INFO 14964 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-21 14:31:09.728  INFO 14964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:31:09.729  INFO 14964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-21 14:31:09.754  INFO 14964 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-21 14:31:09.755  INFO 14964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2021-12-21 14:31:09.761  INFO 14964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:31:09.761  INFO 14964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-21 14:31:09.781  INFO 14964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2021-12-21 14:31:10.156  INFO 14964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-21 14:31:10.163  INFO 14964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-21 14:31:10.163  INFO 14964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-21 14:31:10.243  INFO 14964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-21 14:31:10.243  INFO 14964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1042 ms
+2021-12-21 14:31:10.277  INFO 14964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-21 14:31:10.396  INFO 14964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-21 14:31:10.406  INFO 14964 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-21 14:31:10.526  INFO 14964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-21 14:31:10.563  INFO 14964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-21 14:31:10.596  INFO 14964 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-21 14:31:10.666  INFO 14964 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-21 14:31:10.911  INFO 14964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-21 14:31:10.917  INFO 14964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:31:11.284  WARN 14964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-21 14:31:11.678  INFO 14964 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-21 14:31:11.807  WARN 14964 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-21 14:31:12.166  INFO 14964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-21 14:31:12.194  INFO 14964 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 3.771 seconds (JVM running for 4.349)
+2021-12-21 14:31:14.656  INFO 14964 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-21 14:31:14.658  INFO 14964 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-21 14:31:14.662  INFO 14964 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-12-21 14:35:12.244  INFO 14964 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:35:12.245  INFO 14964 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-21 14:35:12.515  INFO 14964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-21 14:35:12.531  INFO 14964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-21 14:41:50.605  INFO 3656 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.13 on DESKTOP-I4DHMRD with PID 3656 (C:\Users\wjstk\Documents\myProject\muscle-cat\build\classes\java\main started by wjstk in C:\Users\wjstk\Documents\myProject\muscle-cat)
+2021-12-21 14:41:50.607  INFO 3656 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-21 14:41:51.044  INFO 3656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:41:51.045  INFO 3656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-21 14:41:51.068  INFO 3656 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-21 14:41:51.068  INFO 3656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 JDBC repository interfaces.
+2021-12-21 14:41:51.074  INFO 3656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:41:51.075  INFO 3656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-21 14:41:51.092  INFO 3656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2021-12-21 14:41:51.444  INFO 3656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-21 14:41:51.453  INFO 3656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-21 14:41:51.453  INFO 3656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-21 14:41:51.513  INFO 3656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-21 14:41:51.513  INFO 3656 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 880 ms
+2021-12-21 14:41:51.537  INFO 3656 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-21 14:41:51.645  INFO 3656 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-21 14:41:51.653  INFO 3656 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-21 14:41:51.760  INFO 3656 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-21 14:41:51.792  INFO 3656 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-21 14:41:51.823  INFO 3656 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-21 14:41:51.888  INFO 3656 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-21 14:41:52.128  INFO 3656 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-21 14:41:52.136  INFO 3656 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:41:52.359  WARN 3656 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-21 14:41:52.477  INFO 3656 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-21 14:41:52.520  WARN 3656 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-21 14:41:52.685  INFO 3656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-21 14:41:52.715  INFO 3656 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.499 seconds (JVM running for 3.073)
+2021-12-21 14:41:54.036  INFO 3656 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-21 14:41:54.037  INFO 3656 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-21 14:41:54.040  INFO 3656 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-21 14:41:54.094  WARN 3656 --- [http-nio-80-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type String is not present]
+2021-12-21 14:41:56.846  WARN 3656 --- [http-nio-80-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type String is not present]
+2021-12-21 14:41:57.146  WARN 3656 --- [http-nio-80-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type String is not present]
+2021-12-21 14:41:57.368  WARN 3656 --- [http-nio-80-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'id' for method parameter type String is not present]
+2021-12-21 14:45:55.020  INFO 3656 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:45:55.020  INFO 3656 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-21 14:45:55.299  INFO 3656 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-21 14:45:55.306  INFO 3656 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-21 14:51:11.303  INFO 13916 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.13 on DESKTOP-I4DHMRD with PID 13916 (C:\Users\wjstk\Documents\myProject\muscle-cat\build\classes\java\main started by wjstk in C:\Users\wjstk\Documents\myProject\muscle-cat)
+2021-12-21 14:51:11.306  INFO 13916 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-21 14:51:11.831  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:51:11.832  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-21 14:51:11.853  INFO 13916 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-21 14:51:11.854  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2021-12-21 14:51:11.860  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-21 14:51:11.861  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-21 14:51:11.881  INFO 13916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2021-12-21 14:51:12.216  INFO 13916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-21 14:51:12.226  INFO 13916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-21 14:51:12.226  INFO 13916 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-21 14:51:12.301  INFO 13916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-21 14:51:12.301  INFO 13916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 944 ms
+2021-12-21 14:51:12.321  INFO 13916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-21 14:51:12.428  INFO 13916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-21 14:51:12.441  INFO 13916 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-21 14:51:12.559  INFO 13916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-21 14:51:12.595  INFO 13916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-21 14:51:12.623  INFO 13916 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-21 14:51:12.694  INFO 13916 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-21 14:51:12.988  INFO 13916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-21 14:51:12.994  INFO 13916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 14:51:13.299  WARN 13916 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-21 14:51:13.721  INFO 13916 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-21 14:51:13.889  WARN 13916 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-21 14:51:14.334  INFO 13916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-21 14:51:14.368  INFO 13916 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 3.544 seconds (JVM running for 4.128)
+2021-12-21 14:51:35.721  INFO 13916 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-21 14:51:35.724  INFO 13916 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-21 14:51:35.726  INFO 13916 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-21 15:21:25.824  INFO 13916 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-21 15:21:25.824  INFO 13916 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-12-21 15:21:26.094  INFO 13916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-21 15:21:26.102  INFO 13916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

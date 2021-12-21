@@ -1,6 +1,7 @@
 .warp {
     position: relative;
     height: 100%;
+    min-width: 360px;
 
 }
 
@@ -48,13 +49,38 @@
     padding: 20px;
 }
 
+.hyphen {
+    margin: 0px 10px;
+}
+
 .input_box {
     position: relative;
     border: 1px solid gray;
     padding: 10px 10px;
     display: table;
     width: 100%;
-    height: 51px;
+    height: 35px;
+    box-sizing: border-box;
+}
+
+.input_box_post {
+    position: relative;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    display: table;
+    width: 100%;
+    height: 35px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.input_box20 {
+    position: relative;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    display: table;
+    width: 13%;
+    height: 35px;
     box-sizing: border-box;
 }
 
@@ -80,22 +106,91 @@ input {
     line-height: 24px;
     box-sizing: border-box;
 }
-.error_box {
+
+.msg_box {
     margin-top: 5px;
 }
 
-.error_box span {
+.msg_box span {
     color: red;
     font-size: 14px;
 }
+
+.post_btn {
+    background-color: #70798b;
+    border: 0;
+    white-space: nowrap;
+    color: white;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 24px;
+    font-size: 11pt;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.post_code {
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+
+.btn_box {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn_box button {
+    width: 134px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #605f5f;
+    border: 0;
+    color: #eeeeee;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+    justify-items: center;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+
 @media (max-width: 632px) {
     .singUp_box {
         width: 100%;
-        padding: 0 20px;
+
     }
 
     .main_logo {
         width: 236px;
         height: 52px;
+    }
+
+}
+
+@media (max-width: 583px) {
+
+    .input_box20 {
+        width: 66px;
+    }
+
+    .btn_box button {
+        width: 115px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .input_box20 {
+        width: 35%;
     }
 }

@@ -24,12 +24,19 @@ public class MainController {
         return new ResponseEntity<String>("API 성공", HttpStatus.OK);
     }
 
-    @PostMapping ("test")
-    public String login(UserModel userModel) {
+    @PostMapping ("/centerSingUp.do")
+    public ResponseEntity<String> dd() {
         System.out.println("성공");
-        System.out.println(userModel.getId());
-        System.out.println(userModel.getPw());
 
-        return "testIndex";
+        return new ResponseEntity<String>( HttpStatus.OK);
     }
+
+    @PostMapping ("/idCheck.do")
+    public ResponseEntity<String> centerNameCheck(@RequestParam String id) {
+        System.out.println(id);
+
+
+        return new ResponseEntity<String>( HttpStatus.OK);
+    }
+
 }
