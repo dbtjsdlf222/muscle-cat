@@ -19,9 +19,15 @@ public class MainController {
 
     @GetMapping("login")
     public ResponseEntity<String> login(@RequestParam String id,@RequestParam String pw) {
-        userRepository.findByIdAndPw(id, pw);
-        return new ResponseEntity<String>("API 성공", HttpStatus.OK);
+        log.info("로그인: "+id+"|"+pw);
+        if(userRepository.findByIdAndPw(id, pw)!=null){
+            return new ResponseEntity<String>("true", HttpStatus.OK);
+        } else {
+            return new ResponseEntity<String>("false", HttpStatus.OK);
+        }
+
     }
+
 
     @PostMapping ("/centerSingUp.do")
     public ResponseEntity<String> dd() {
