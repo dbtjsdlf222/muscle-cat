@@ -25,6 +25,7 @@ public class UserModel {
 	@Column(name = "name",length = 16)
 	private String name;
 
+	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.DETACH)
 	@Column(name = "franchise_no",length = 16)
 	private Integer franchiseNo;
 

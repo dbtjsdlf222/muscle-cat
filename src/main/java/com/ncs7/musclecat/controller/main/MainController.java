@@ -25,15 +25,6 @@ public class MainController {
         } else {
             return new ResponseEntity<String>("false", HttpStatus.OK);
         }
-
-    }
-
-
-    @PostMapping ("/centerSingUp.do")
-    public ResponseEntity<String> dd() {
-        System.out.println("성공");
-
-        return new ResponseEntity<String>( HttpStatus.OK);
     }
 
     @PostMapping ("/join")
@@ -42,11 +33,4 @@ public class MainController {
         userRepository.save(userModel);
         return new ResponseEntity<String>( HttpStatus.OK);
     }
-
-    @PostMapping ("/idCheck.do")
-    public ResponseEntity<String> centerNameCheck(@RequestParam String id) {
-        System.out.println(id);
-        return new ResponseEntity<String>( HttpStatus.OK);
-    }
-
 }
