@@ -17,7 +17,6 @@ public class MainController {
     @Autowired
     UserRepository userRepository;
 
-
     @GetMapping("login")
     public ResponseEntity<String> login(@RequestParam String id,@RequestParam String pw) {
         userRepository.findByIdAndPw(id, pw);
@@ -31,11 +30,16 @@ public class MainController {
         return new ResponseEntity<String>( HttpStatus.OK);
     }
 
+    @PostMapping ("/join")
+    public ResponseEntity<String> join(UserModel userModel) {
+        log.info("회원가입");
+        userRepository.save(userModel);
+        return new ResponseEntity<String>( HttpStatus.OK);
+    }
+
     @PostMapping ("/idCheck.do")
     public ResponseEntity<String> centerNameCheck(@RequestParam String id) {
         System.out.println(id);
-
-
         return new ResponseEntity<String>( HttpStatus.OK);
     }
 
