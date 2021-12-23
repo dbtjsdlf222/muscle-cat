@@ -1,5 +1,6 @@
 package com.ncs7.musclecat.controller.main;
 
+import com.ncs7.musclecat.model.FranchiseModel;
 import com.ncs7.musclecat.model.UserModel;
 import com.ncs7.musclecat.repository.CenterRepository;
 import com.ncs7.musclecat.repository.FranchiseRepository;
@@ -26,11 +27,14 @@ public class CenterController {
     @PostMapping("/join")
     public ResponseEntity<Boolean> joinCenter(AllInfoVO vo) {
         log.info("센터 회원가입");
-        log.debug(vo.getCenterModel().getName());
-        log.debug(vo.getFranchiseModel().getId()+" | "+vo.getFranchiseModel().getPw());
-        log.debug("qwdqdqwd");
+        log.info("센터회원가입"+vo.getCenterModel().getName());
+        log.info("id: "+vo.getFranchiseModel().getId()+"   pw: "+vo.getFranchiseModel().getPw());
+
         centerRepository.save(vo.getCenterModel());
         franchiseRepository.save(vo.getFranchiseModel());
+
+        log.info(vo.getCenterModel().toString());
+        log.info(vo.getFranchiseModel().toString());
 
         return new ResponseEntity<>(HttpStatus.OK);
     }

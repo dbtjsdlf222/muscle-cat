@@ -1,5 +1,6 @@
 package com.ncs7.musclecat.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.DynamicUpdate;
@@ -22,7 +23,7 @@ public class TrainerModel {
     private String photo;
     @Column(name = "reg_date")
     private LocalDateTime regDate;
-
+    @JsonBackReference
     @JoinColumn(name = "franchise_no")
     @ManyToOne
     private FranchiseModel franchise;

@@ -1,5 +1,6 @@
 package com.ncs7.musclecat.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
@@ -25,6 +26,7 @@ public class UserModel {
 	@Column(name = "name",length = 16)
 	private String name;
 
+	@JsonBackReference
 	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.DETACH)
 	@JoinColumn(name = "franchise_no")
 	private FranchiseModel franchise;

@@ -1,5 +1,7 @@
 package com.ncs7.musclecat.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
@@ -10,12 +12,12 @@ import java.util.List;
 
 @Table(name = "franchise")
 @Entity
-@Setter
-@Getter
+@Data
 public class FranchiseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer no;
+    @JsonBackReference
     @ManyToOne
     @JoinColumn(name = "center_no",referencedColumnName ="no")
     private CenterModel center;
@@ -28,9 +30,11 @@ public class FranchiseModel {
     @CreationTimestamp
     private LocalDateTime regDate;
 
+    @JsonBackReference
     @OneToMany(mappedBy = "franchise",fetch = FetchType.LAZY)
     private List<TrainerModel> trainerModelList;
 
+    @JsonBackReference
     @OneToOne(mappedBy = "franchise")
     private UserModel user;
 }

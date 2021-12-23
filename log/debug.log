@@ -883,3 +883,80 @@ com.ncs7.musclecat.controller.main.CenterController#joinCenter(AllInfoVO) mapped
 2021-12-23 16:49:13.286  WARN 16520 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
 2021-12-23 16:49:13.402  INFO 16520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
 2021-12-23 16:49:13.417  INFO 16520 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.515 seconds (JVM running for 3.137)
+2021-12-23 17:57:20.025  INFO 23720 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.11 on 유선일 with PID 23720 (C:\Users\2021.04.09\Desktop\musclecat\out\production\classes started by 2021.04.09 in C:\Users\2021.04.09\Desktop\musclecat)
+2021-12-23 17:57:20.025  INFO 23720 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-23 17:57:20.473  INFO 23720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-23 17:57:20.473  INFO 23720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-23 17:57:20.489  INFO 23720 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.CenterRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-23 17:57:20.489  INFO 23720 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.FranchiseRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-23 17:57:20.489  INFO 23720 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.TrainerRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-23 17:57:20.489  INFO 23720 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-23 17:57:20.505  INFO 23720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2021-12-23 17:57:20.505  INFO 23720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-23 17:57:20.505  INFO 23720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-23 17:57:20.527  INFO 23720 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 4 JPA repository interfaces.
+2021-12-23 17:57:20.843  INFO 23720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-23 17:57:20.859  INFO 23720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-23 17:57:20.859  INFO 23720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-23 17:57:20.943  INFO 23720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-23 17:57:20.943  INFO 23720 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 887 ms
+2021-12-23 17:57:20.959  INFO 23720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-23 17:57:21.075  INFO 23720 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-23 17:57:21.075  INFO 23720 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-23 17:57:21.175  INFO 23720 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-23 17:57:21.213  INFO 23720 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-23 17:57:21.247  INFO 23720 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-23 17:57:21.313  INFO 23720 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-23 17:57:21.626  INFO 23720 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-23 17:57:21.636  INFO 23720 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-23 17:57:21.917  WARN 23720 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-23 17:57:22.040  INFO 23720 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-23 17:57:22.081  WARN 23720 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-23 17:57:22.190  INFO 23720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-23 17:57:22.192  INFO 23720 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.5 seconds (JVM running for 3.133)
+2021-12-23 17:57:24.470  INFO 23720 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-23 17:57:24.471  INFO 23720 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-23 17:57:24.472  INFO 23720 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-12-23 17:57:24.507  INFO 23720 --- [http-nio-80-exec-1] c.n.m.controller.main.CenterController   : 센터 회원가입
+2021-12-23 17:57:24.507  INFO 23720 --- [http-nio-80-exec-1] c.n.m.controller.main.CenterController   : 1,ㅇㅇㅇㅇㅇ
+2021-12-23 17:57:24.507  INFO 23720 --- [http-nio-80-exec-1] c.n.m.controller.main.CenterController   : 2,dadadad | 3,franchiseModel.idfranchiseModel.idfranchiseModel.idfranchiseModel.id
+2021-12-23 17:57:24.507  INFO 23720 --- [http-nio-80-exec-1] c.n.m.controller.main.CenterController   : qwdqdqwd
+2021-12-23 18:01:11.118  INFO 21908 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Starting MuscleCatApplication using Java 11.0.11 on 유선일 with PID 21908 (C:\Users\2021.04.09\Desktop\musclecat\out\production\classes started by 2021.04.09 in C:\Users\2021.04.09\Desktop\musclecat)
+2021-12-23 18:01:11.118  INFO 21908 --- [main] com.ncs7.musclecat.MuscleCatApplication  : No active profile set, falling back to default profiles: default
+2021-12-23 18:01:11.550  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-23 18:01:11.550  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2021-12-23 18:01:11.566  INFO 21908 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.CenterRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-23 18:01:11.566  INFO 21908 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.FranchiseRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-23 18:01:11.566  INFO 21908 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.TrainerRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-23 18:01:11.566  INFO 21908 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.ncs7.musclecat.repository.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2021-12-23 18:01:11.566  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 JDBC repository interfaces.
+2021-12-23 18:01:11.566  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-12-23 18:01:11.582  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-12-23 18:01:11.604  INFO 21908 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
+2021-12-23 18:01:11.920  INFO 21908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2021-12-23 18:01:11.920  INFO 21908 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-23 18:01:11.920  INFO 21908 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-23 18:01:12.005  INFO 21908 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-23 18:01:12.005  INFO 21908 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 856 ms
+2021-12-23 18:01:12.021  INFO 21908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-23 18:01:12.136  INFO 21908 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-23 18:01:12.136  INFO 21908 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/db'. Database available at 'jdbc:h2:~/test'
+2021-12-23 18:01:12.237  INFO 21908 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-23 18:01:12.268  INFO 21908 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2021-12-23 18:01:12.306  INFO 21908 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-23 18:01:12.378  INFO 21908 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-23 18:01:12.711  INFO 21908 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-23 18:01:12.727  INFO 21908 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-23 18:01:13.008  WARN 21908 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-23 18:01:13.124  INFO 21908 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2021-12-23 18:01:13.171  WARN 21908 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-23 18:01:13.287  INFO 21908 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2021-12-23 18:01:13.302  INFO 21908 --- [main] com.ncs7.musclecat.MuscleCatApplication  : Started MuscleCatApplication in 2.54 seconds (JVM running for 3.121)
+2021-12-23 18:01:15.383  INFO 21908 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-23 18:01:15.384  INFO 21908 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-23 18:01:15.384  INFO 21908 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-12-23 18:01:15.419  INFO 21908 --- [http-nio-80-exec-2] c.n.m.controller.main.CenterController   : 센터 회원가입
+2021-12-23 18:01:15.419  INFO 21908 --- [http-nio-80-exec-2] c.n.m.controller.main.CenterController   : 센터회원가입1,ㅇㅇㅇㅇㅇ
+2021-12-23 18:01:15.421  INFO 21908 --- [http-nio-80-exec-2] c.n.m.controller.main.CenterController   : id: 2,dadadad   pw: 3,franchiseModel.idfranchiseModel.idfranchiseModel.idfranchiseModel.id
+2021-12-23 18:01:15.493  INFO 21908 --- [http-nio-80-exec-2] c.n.m.controller.main.CenterController   : CenterModel(no=1, name=1,ㅇㅇㅇㅇㅇ, businessNumber=null, regDate=2021-12-23T18:01:15.472390100, franchise=null)
+2021-12-23 18:01:15.493  INFO 21908 --- [http-nio-80-exec-2] c.n.m.controller.main.CenterController   : com.ncs7.musclecat.model.FranchiseModel@4d460ee4

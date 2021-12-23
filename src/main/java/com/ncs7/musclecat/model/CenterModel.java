@@ -1,5 +1,6 @@
 package com.ncs7.musclecat.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicInsert;
@@ -18,6 +19,7 @@ import java.util.List;
 @Builder
 @DynamicInsert
 @DynamicUpdate
+@ToString
 public class CenterModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -29,6 +31,7 @@ public class CenterModel {
     @Column(name = "reg_date")
     private LocalDateTime regDate;
 
+    @JsonBackReference
     @OneToMany(mappedBy = "center",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private List<FranchiseModel> franchise;
 }
