@@ -105,7 +105,7 @@ const SingUp = () => {
 
     //전화번호 useEffect 이벤트
     useEffect( () => {
-        setTelephone(telephone.replace(/(\d{2}|\d{3})(\d{3})(\d{4})/, '$1-$2-$3'));
+        setTelephone(telephone.replace(/(\d{2})(\d{3})(\d{4})/, '$1-$2-$3'));
     },[telephone])
 
 
@@ -121,49 +121,50 @@ const SingUp = () => {
                 <div className={styles.input_wrap}>
                     <div>
                         <div className={ styles.input_wrap }>
-                            <form action="/centerSingUp.do" method="post" name="form" id="form">
+                            <form action="/center/join" method="post" name="form" id="form">
                                 { /* 센터명 */ }
-                                <SingUpInput id="centerName" name="centerName" title="센터명"  type="text"/>
+                                <SingUpInput id="centerModel.name" name="centerModel.name" title="센터명"  type="text"/>
                                 { /* 지점명 */ }
-                                <SingUpInput id="franchiseName" name="franchiseName" title="지점명"  type="text" />
+                                <SingUpInput id="franchiseModel.name" name="franchiseModel.name" title="지점명"  type="text" />
                                 { /* 사업자번호 */ }
-                                <SingUpInputNumber id="businessNumber" name="businessNumber" title="사업자번호"  onChange={businessNumberOnChange} onBlur={ businessNumberCheck } state={businessNumber}/>
+                                <SingUpInputNumber id="businessNumber" name="franchiseModel.businessNumber" title="사업자번호"  onChange={businessNumberOnChange} onBlur={ businessNumberCheck } state={businessNumber}/>
                                 { /* 사업자번호 메세지 */ }
                                 <SingUpMsg msg={ businessNumberMsg } />
                                 { /* 아이디 */ }
-                                <SingUpInput id="id" name="id" title="아이디" type="text"  onChange={ idOnChange } onBlur={ idCheck } state={ id }/>
+                                <SingUpInput id="franchiseModel.id" name="franchiseModel.id" title="아이디" type="text"  onChange={ idOnChange } onBlur={ idCheck } state={ id }/>
                                 { /* 아이디 메세지 */ }
                                 <SingUpMsg msg={ idMsg } />
                                 { /* 패스워드 */ }
-                                <SingUpInput id="pw" name="pw" title="패스워드" type="password"/>
+                                <SingUpInput id="franchiseModel.pw" name="franchiseModel.pw" title="패스워드" type="password"/>
                                 { /* 주소 */ }
                                 <div className={ styles.input_title }>
                                     <span>주소</span>
                                 </div>
                                 <div className={ styles.post_code }>
                                     <div className={ styles.input_box20 }>
-                                        <input id="zoneCode" name="zoneCode" className={ styles.input_text } type="text" value={ zoneCode }/>
+                                        <input id="zoneCode" name="franchiseModel.address" className={ styles.input_text } type="text" value={ zoneCode }/>
                                     </div>
                                     <button type="button" className={ styles.post_btn } onClick={ onChangeOpenPost } > 주소검색 </button>
                                 </div>
                                 <div className={ styles.input_box_post } >
-                                    <input id="address" name="address" className={ styles.input_text } type="text" value={ address } />
+                                    <input id="address" name="franchiseModel.address" className={ styles.input_text } type="text" value={ address } />
                                 </div>
                                 <div className={ styles.input_box_post }>
-                                    <input id="addressDetail" name="addressDetail" className={ styles.input_text } type="text" />
+                                    <input id="addressDetail" name="franchiseModel.address" className={ styles.input_text } type="text" />
                                 </div>
                                 { /* 다음 주소검색 API */ }
                                 {isOpenPost  ? (<DaumPostcode style={ { width:"100%", border: "1px solid black",zIndex: "100", marginTop: "10px"}  } autoClose onComplete={onCompletePost } />) : null}
                                 { /* 전화번호 */ }
-                                <SingUpInputNumber id="telephone" name="telephone" title="전화번호" onChange={telephoneOnChange} state={telephone}/>
+                                <SingUpInputNumber id="telephone" name="franchiseModel.telephone" title="전화번호" onChange={telephoneOnChange} state={telephone}/>
                                 { /* 이메일 */ }
-                                <SingUpInput id="email" name="email" title="이메일" type="text"/>
+                                <SingUpInput id="email" name="franchiseModel.email" title="이메일" type="text"/>
                                 { /* 버튼박스 */ }
                                 <div className={ styles.btn_box }>
                                     <button type="submit">가입</button>
                                     <button type="button" onClick={ goBack }>취소</button>
                                 </div>
                             </form>
+
                         </div>
                     </div>
 
