@@ -16,7 +16,6 @@ public class FranchiseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer no;
-    @Column(name = "center")
     @ManyToOne
     @JoinColumn(name = "center_no",referencedColumnName ="no")
     private CenterModel center;

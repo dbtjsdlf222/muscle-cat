@@ -23,7 +23,6 @@ public class TrainerModel {
     @Column(name = "reg_date")
     private LocalDateTime regDate;
 
-    @Column(name = "franchise_no")
     @JoinColumn(name = "franchise_no")
     @ManyToOne
     private FranchiseModel franchise;
