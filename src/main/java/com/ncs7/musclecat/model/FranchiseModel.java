@@ -6,18 +6,18 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Table(name = "franchise")
 @Entity
 @Setter
 @Getter
-public class Franchise {
+public class FranchiseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer no;
-    @Column(name = "center")
-    @OneToMany
-    @JoinColumn(name = "TrainerModel")
+    @ManyToOne
+    @JoinColumn(name = "center_no",referencedColumnName ="no")
     private CenterModel center;
     private String id;
     private String pw;
@@ -27,4 +27,10 @@ public class Franchise {
     @Column(name = "reg_date")
     @CreationTimestamp
     private LocalDateTime regDate;
+
+    @OneToMany(mappedBy = "franchise")
+    private List<TrainerModel> trainerModelList;
+
+    @OneToOne(mappedBy = "franchise")
+    private UserModel user;
 }
