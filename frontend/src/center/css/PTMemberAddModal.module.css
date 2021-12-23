@@ -1,0 +1,156 @@
+.modal_container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.modal_warp {
+    width: 450px;
+    height: 470px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    padding: 10px 20px;
+}
+
+.modal_button{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    padding-top: 15px;
+}
+
+.modal_header {
+    width: 100%;
+    position: relative;
+
+}
+.main_wrap  hr{
+    margin: 30px 0px;
+}
+
+.main_title {
+    display: inline-block;
+}
+.main_title span {
+    font-size: 32px;
+}
+
+.modal_body {
+    width: 100%;
+}
+
+.modal_body table {
+    border-collapse: collapse;
+}
+
+.modal_body table th {
+    border-bottom: 1px #70798b dotted ;
+    display: flex;
+}
+
+.modal_body table th:first-child {
+    border-top: 1px #70798b dotted ;
+}
+
+.inputDate {
+    width: 230px;
+    height: 30px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    border: 1px solid #d4d5d9;
+    line-height: inherit;
+}
+
+.inputText {
+    width: 150px;
+    height: 30px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    border: 1px solid #d4d5d9;
+    line-height: inherit;
+}
+
+.modal_body table td {
+    display: flex;
+    align-items: center;
+}
+
+.modal_body table td:first-child {
+    background: #efeeed;
+    width: 80px;
+    height: 70px;
+    padding: 0px 20px;
+    margin-right: 20px;
+
+}
+
+
+.button_box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.save_button {
+    width: 134px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #605f5f;
+    border: 0;
+    color: #eeeeee;
+    font-size: 16px;
+    font-weight: 600;
+    justify-items: center;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+.find_button {
+    padding: 0 20px;
+    height: 32px;
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid #605f5f;
+    color: #605f5f;
+    margin-left: 10px;
+}
+
+@media (max-width: 583px) {
+
+    .modal_warp {
+        width: 300px;
+    }
+
+    .modal_body table td:first-child {
+        width: 31px;
+
+    }
+
+    .inputText {
+        width: 120px;
+    }
+
+    .inputDate {
+        width: 204px;
+        font-size: 13px;
+    }
+
+}
+

@@ -8,7 +8,7 @@ const SingUpInput = (props) => {
                 <span>{ props.title }</span>
             </div>
             <div className={ styles.input_box }>
-                <input id={ props.id } className={ styles.input_text } type={ props.type } onClick={ props.onClick } value={ props.state} onChange={ props.onChange } />
+                <input id={ props.id } name={ props.name } className={ styles.input_text } type={ props.type } onClick={ props.onClick } value={ props.state} onChange={ props.onChange } onBlur= { props.onBlur } />
             </div>
         </>
     );

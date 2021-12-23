@@ -18,7 +18,8 @@ public class Franchise {
     @Column(name = "center")
     @OneToMany
     @JoinColumn(name = "TrainerModel")
-    private CenterModel center;private String id;
+    private CenterModel center;
+    private String id;
     private String pw;
     private String address;
     private String telephone;
