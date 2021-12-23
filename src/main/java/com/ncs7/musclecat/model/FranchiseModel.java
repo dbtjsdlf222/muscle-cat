@@ -28,7 +28,7 @@ public class FranchiseModel {
     @CreationTimestamp
     private LocalDateTime regDate;
 
-    @OneToMany(mappedBy = "franchise")
+    @OneToMany(mappedBy = "franchise",fetch = FetchType.LAZY)
     private List<TrainerModel> trainerModelList;
 
     @OneToOne(mappedBy = "franchise")
