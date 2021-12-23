@@ -2,13 +2,20 @@ import SideBar from "./SideBar";
 import styles from "../css/PT.module.css";
 import React, {useState} from "react";
 import moment from 'moment';
-import { FaCaretLeft, FaCaretRight,FaTimes } from "react-icons/fa"
+import {FaCaretLeft, FaCaretRight, FaTimes, FaUserPlus} from "react-icons/fa"
+import PTMemberAddModal from "./PTMemberAddModal";
 
 const PT = (props) => {
     const [getMoment, setMoment] = useState(moment);
     const today = getMoment;
     const firstWeek = today.clone().startOf('month').week();
     const lastWeek = today.clone().endOf('month').week() === 1 ? 53 :today.clone().endOf('month').week();
+
+    const [modalOpen, setModalOpen] = useState(false)
+    const modalClose = () => {
+        setModalOpen(!modalOpen)
+    }
+
 
     const calendarArr=()=>{
         let result = [
@@ -67,22 +74,24 @@ const PT = (props) => {
                 </div>
                 <hr />
                 <div className={ styles.btn_box }>
+                    <button className={ styles.add_button } onClick={modalClose}> <FaUserPlus size="20"/> <span>PT 등록</span></button>
+                </div>
+                <div className={ styles.calendar_btn_box }>
                     <button className={ styles.btn } onClick={()=>{ setMoment(getMoment.clone().subtract(1, 'month')) }} >
                         <FaCaretLeft size="30" />
                     </button>
                     <span>{today.format('YYYY 년 MM 월')}</span>
                     <button className={ styles.btn } onClick={()=>{ setMoment(getMoment.clone().add(1, 'month')) }}>
                         <FaCaretRight size="30" />
-
                     </button>
                 </div>
                 <div className={ styles.calendar_wrap }>
                     {calendarArr()}
                 </div>
-                <div className={ styles.flex_box }>
-                    <FaTimes size="40" color="white" />
-                </div>
+                { modalOpen && <PTMemberAddModal modalClose={modalClose}></PTMemberAddModal>}
             </div>
+
+
         </>
     );
 }

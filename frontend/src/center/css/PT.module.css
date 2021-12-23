@@ -15,7 +15,7 @@
     font-size: 32px;
 }
 
-.btn_box{
+.calendar_btn_box{
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -24,7 +24,7 @@
     width: 100%;
 }
 
-.btn_box span {
+.calendar_btn_box > span {
     font-size: 20px;
 }
 
@@ -35,7 +35,7 @@
 }
 .calendar_wrap {
     width: 100%;
-    height: 74%;
+    height: 67%;
 }
 .calendar_week {
     width: 100%;
@@ -84,17 +84,41 @@
     color: blue;
 }
 
-.flex_box {
-    position: fixed;
-    align-items: center;
-    left: 92%;
-    top: 87%;
-    width: 80px;
-    height: 80px;
-    border-radius: 40px;
-    background-color: #343232;
+.btn_box {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.add_button {
+    float: right;
+    width: 134px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #605f5f;
+    border: 0;
+    color: #eeeeee;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 23px;
+    justify-items: center;
     display: flex;
-    justify-content: center;
-    transform: rotate(45deg);
+    align-items: center;
     cursor: pointer;
+}
+
+.add_button > span {
+    margin-left: 10px;
+}
+
+@media (max-width: 583px) {
+
+    .add_button {
+        width: 106px;
+        height: 40px;
+        font-size: 13px;
+        padding: 12px;
+    }
+
+
 }
