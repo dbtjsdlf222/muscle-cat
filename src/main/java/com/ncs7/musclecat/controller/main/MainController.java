@@ -9,7 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/")
+@RestController
+@RequestMapping("/")
 @Slf4j  //log 라이브러리 검색추천
 @CrossOrigin(origins = "http://localhost:3000")
 public class MainController {
@@ -17,7 +18,7 @@ public class MainController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("login")
+    @GetMapping("/login")
     public ResponseEntity<String> login(@RequestParam String id,@RequestParam String pw) {
         log.info("로그인: "+id+"|"+pw);
         if(userRepository.findByIdAndPw(id, pw)!=null){

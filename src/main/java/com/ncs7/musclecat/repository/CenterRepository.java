@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface CenterRepository extends JpaRepository<CenterModel, Integer> {
 
 	UserModel findByNo(Integer no);
-	UserModel findById(String id);
 	UserModel findByName(String name);
 
 }
