@@ -24,5 +24,7 @@ public class TrainerModel {
     private LocalDateTime regDate;
 
     @Column(name = "franchise_no")
-    private Franchise franchise; //지점 고유 번호
+    @JoinColumn(name = "franchise_no")
+    @ManyToOne
+    private FranchiseModel franchise;
 }

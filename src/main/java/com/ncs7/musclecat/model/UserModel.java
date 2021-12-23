@@ -26,8 +26,8 @@ public class UserModel {
 	private String name;
 
 	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.DETACH)
-	@Column(name = "franchise_no",length = 16)
-	private Integer franchiseNo;
+	@JoinColumn(name = "franchise_no")
+	private FranchiseModel franchise;
 
 	@Column(name = "id",length = 32)
 	private String id;
