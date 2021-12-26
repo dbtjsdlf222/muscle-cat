@@ -37,5 +37,4 @@ function User_Singup() {
         </div>
     );
 }
-
 export default User_Singup;
