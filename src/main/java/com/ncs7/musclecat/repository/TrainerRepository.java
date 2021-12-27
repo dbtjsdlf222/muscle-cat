@@ -6,6 +6,6 @@ import com.ncs7.musclecat.model.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TrainerRepository extends JpaRepository<TrainerModel, Integer> {
-	UserModel findByNo(Integer no);
-	UserModel findByName(String name);
+	TrainerModel findByNo(Integer no);
+	TrainerModel findByName(String name);
 }

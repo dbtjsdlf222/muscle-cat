@@ -3,6 +3,7 @@ package com.ncs7.musclecat.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
@@ -22,6 +23,7 @@ public class TrainerModel {
     private String address;
     private String photo;
     @Column(name = "reg_date")
+    @CreationTimestamp
     private LocalDateTime regDate;
     @JsonBackReference
     @JoinColumn(name = "franchise_no")
