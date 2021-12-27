@@ -1,5 +1,6 @@
 package com.ncs7.musclecat.controller.main;
 
+import com.ncs7.musclecat.model.CenterModel;
 import com.ncs7.musclecat.model.FranchiseModel;
 import com.ncs7.musclecat.model.UserModel;
 import com.ncs7.musclecat.repository.CenterRepository;
@@ -30,7 +31,8 @@ public class CenterController {
         log.info("센터회원가입"+vo.getCenterModel().getName());
         log.info("id: "+vo.getFranchiseModel().getId()+"   pw: "+vo.getFranchiseModel().getPw());
 
-        centerRepository.save(vo.getCenterModel());
+        CenterModel a  = centerRepository.save(vo.getCenterModel());
+        vo.getFranchiseModel().setCenter(a);
         franchiseRepository.save(vo.getFranchiseModel());
 
         log.info(vo.getCenterModel().toString());
