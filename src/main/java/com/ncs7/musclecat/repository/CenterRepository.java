@@ -8,5 +8,6 @@ public interface CenterRepository extends JpaRepository<CenterModel, Integer> {
 
 	CenterModel findByNo(Integer no);
 	CenterModel findByName(String name);
+	CenterModel findByBusinessNumber(String businessNumber);
 
 }

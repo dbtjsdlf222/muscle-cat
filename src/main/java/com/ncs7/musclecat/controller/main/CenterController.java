@@ -30,9 +30,11 @@ public class CenterController {
         log.info("센터 회원가입");
         log.info("센터회원가입"+vo.getCenterModel().getName());
         log.info("id: "+vo.getFranchiseModel().getId()+"   pw: "+vo.getFranchiseModel().getPw());
-
-        CenterModel a  = centerRepository.save(vo.getCenterModel());
-        vo.getFranchiseModel().setCenter(a);
+        CenterModel b = centerRepository.findByBusinessNumber(vo.getCenterModel().getBusinessNumber());
+        if(b == null){
+            b = centerRepository.save(vo.getCenterModel());
+        }
+        vo.getFranchiseModel().setCenter(b);
         franchiseRepository.save(vo.getFranchiseModel());
 
         log.info(vo.getCenterModel().toString());
